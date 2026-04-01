@@ -1,0 +1,29 @@
+# Custom 404 Error Document
+# If you are testing on local XAMPP (http://localhost/ITWAYS/), use this:
+ErrorDocument 404 /ITWAYS/404.php
+
+# NOTE: When you upload this to a live server (like www.itways.com), 
+# you should change the above line to:
+# ErrorDocument 404 /404.php
+
+Options -Indexes
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /ITWAYS/
+
+    # 1. Redirect /page.php to /page/
+    RewriteCond %{THE_REQUEST} \s/ITWAYS/([^.]+)\.php [NC]
+    RewriteRule ^ %1/ [R=301,L]
+
+    # 2. Redirect /page to /page/ (if the file exists)
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME}\.php -f
+    RewriteRule ^(.*[^/])$ $1/ [L,R=301]
+
+    # 3. Internal rewrite /page/ to /page.php
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.+)/$ $1.php [L]
+</IfModule>
