@@ -484,10 +484,35 @@
 
 /* Global Mobile Overflow Fix */
 @media (max-width: 991px) {
+
     html,
     body {
         overflow-x: hidden !important;
         width: 100%;
         max-width: 100vw;
+    }
+}
+
+@media (max-width: 991px) {
+    .cr-premium-brand-card {
+        padding: 60px 30px;
+    }
+
+    .cr-gradient-text {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 768px) {
+    .cr-job-card-v2 {
+        padding: 35px;
+    }
+}
+
+@media (max-width: 991px) {
+    .pc-product-card {
+        grid-template-columns: 1fr !important;
+        gap: 30px !important;
+        padding: 30px !important;
     }
 }

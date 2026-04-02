@@ -33,19 +33,19 @@
 
                     <div class="row mt-4 g-4">
                         <div class="col-sm-6">
-                            <div style="display: flex; align-items: center; gap: 15px;">
-                                <div style="width: 50px; height: 50px; border-radius: 50%; background: rgba(6, 182, 212, 0.1); color: var(--secondary-color); display: flex; align-items: center; justify-content: center; font-size: 20px;">
+                            <div class="about-card">
+                                <div class="about-icon-box">
                                     <i class="fas fa-check"></i>
                                 </div>
-                                <span style="font-weight: 700; color: var(--heading-color);">Proven Expertise</span>
+                                <span>Proven Expertise</span>
                             </div>
                         </div>
                         <div class="col-sm-6">
-                            <div style="display: flex; align-items: center; gap: 15px;">
-                                <div style="width: 50px; height: 50px; border-radius: 50%; background: rgba(14, 165, 233, 0.1); color: var(--secondary-color); display: flex; align-items: center; justify-content: center; font-size: 20px;">
+                            <div class="about-card">
+                                <div class="about-icon-box">
                                     <i class="fas fa-bolt"></i>
                                 </div>
-                                <span style="font-weight: 700; color: var(--heading-color);">Rapid Delivery</span>
+                                <span>Rapid Delivery</span>
                             </div>
                         </div>
                     </div>
@@ -53,11 +53,11 @@
             </div>
             <div class="col-lg-5">
                 <div class="card ab-values-card" data-tilt style="padding: 45px; border-radius: 30px;">
-                    <div class="contact-icon-box" style="margin-bottom: 30px;">
+                    <div class="contact-icon-box">
                         <i class="fas fa-seedling"></i>
                     </div>
                     <h3 class="text-heading-color mb-20" style="font-size: 24px; font-weight: 800;">Our Ecosystem</h3>
-                    <p class="ab-story-text" style="font-size: 15px; margin-bottom: 25px;">IT Ways has cultivated a vast network of partnerships with industry and technology leaders to ensure we deliver cutting-edge results.</p>
+                    <p class="ab-story-text" style="margin-bottom: 25px;">IT Ways has cultivated a vast network of partnerships with industry and technology leaders to ensure we deliver cutting-edge results.</p>
                     <a href="<?php echo BASE_URL; ?>contact/" class="btn btn-primary" style="background: var(--secondary-color); border: none; padding: 12px 30px; border-radius: 50px; font-weight: 700;">Partner With Us</a>
                 </div>
             </div>
@@ -76,7 +76,7 @@
             <!-- Client-Centric Approach -->
             <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
                 <div class="contact-premium-card">
-                    <div class="contact-icon-box" style="background: rgba(6, 182, 212, 0.1); color: var(--secondary-color);">
+                    <div class="contact-icon-box" style="background: rgba(6, 182, 212, 0.1);">
                         <i class="fas fa-users-viewfinder"></i>
                     </div>
                     <span class="contact-badge-label">Strategy</span>
@@ -87,7 +87,7 @@
             <!-- Immaculate User Experience -->
             <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
                 <div class="contact-premium-card">
-                    <div class="contact-icon-box" style="background: rgba(14, 165, 233, 0.1); color: var(--secondary-color);">
+                    <div class="contact-icon-box" style="background: rgba(14, 165, 233, 0.1);">
                         <i class="fas fa-wand-magic-sparkles"></i>
                     </div>
                     <span class="contact-badge-label">Design</span>

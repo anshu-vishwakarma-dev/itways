@@ -215,27 +215,29 @@ $service = isset($services_data[$type]) ? $services_data[$type] : $services_data
             <div class="col-lg-8" data-aos="fade-up">
 
                 <!-- Overview Card -->
-                <div class="card pc-detail-card" style="margin-bottom: 40px;">
-                    <div style="display: flex; align-items: center; gap: 20px; margin-bottom: 30px;">
-                        <div style="width: 70px; height: 70px; background: rgba(6, 182, 212, 0.1); border-radius: 20px; display: flex; align-items: center; justify-content: center; font-size: 32px; color: var(--secondary-color);">
+                <div class="card pc-detail-card" style="margin-bottom: 40px; border: none; box-shadow: var(--shadow);">
+                    <div style="display: flex; align-items: center; gap: 25px; margin-bottom: 35px; flex-wrap: wrap;">
+                        <div style="width: 80px; height: 80px; background: linear-gradient(135deg, rgba(6,182,212,0.1) 0%, rgba(6,182,212,0.2) 100%); border-radius: 20px; display: flex; align-items: center; justify-content: center; font-size: 36px; color: var(--secondary-color); box-shadow: inset 0 0 20px rgba(255,255,255,0.5);">
                             <i class="<?php echo $service['icon']; ?>"></i>
                         </div>
                         <div>
-                            <span style="font-size: 11px; font-weight: 800; text-transform: uppercase; letter-spacing: 1.5px; color: var(--secondary-color);"><?php echo $service['badge']; ?></span>
-                            <h2 style="font-size: 28px; font-weight: 800; color: var(--heading-color); margin: 0;"><?php echo $service['title']; ?></h2>
+                            <span style="display: inline-block; padding: 6px 14px; background: var(--light-bg); border: 1px solid var(--border-color); border-radius: 50px; font-size: 11px; font-weight: 800; text-transform: uppercase; letter-spacing: 1.5px; color: var(--secondary-color); margin-bottom: 12px;"><?php echo $service['badge']; ?></span>
+                            <h2 style="font-size: 32px; font-weight: 900; color: var(--heading-color); margin: 0; letter-spacing: -0.02em;"><?php echo $service['title']; ?></h2>
                         </div>
                     </div>
 
-                    <p style="font-size: 17px; line-height: 1.9; color: var(--text-color); margin-bottom: 30px;"><?php echo $service['description']; ?></p>
+                    <p style="font-size: 16px; line-height: 1.9; color: var(--text-color); margin-bottom: 40px; font-weight: 400;"><?php echo $service['description']; ?></p>
 
-                    <h3 style="font-size: 20px; font-weight: 800; color: var(--heading-color); margin-bottom: 25px;">Core Features & Capabilities</h3>
+                    <h3 style="font-size: 22px; font-weight: 800; color: var(--heading-color); margin-bottom: 25px; display: flex; align-items: center; gap: 10px;"><i class="fas fa-gem" style="color: var(--secondary-color); font-size: 16px;"></i> Core Features & Capabilities</h3>
 
                     <div class="row g-4 mb-4">
                         <?php foreach ($service['features'] as $feature): ?>
                             <div class="col-md-6">
-                                <div style="display: flex; align-items: center; gap: 15px; padding: 20px; background: var(--light-bg); border-radius: 16px; border: 1px solid var(--border-color);">
-                                    <i class="fas fa-check-circle" style="color: var(--secondary-color); font-size: 18px;"></i>
-                                    <span style="font-weight: 600; font-size: 14px; color: var(--heading-color);"><?php echo $feature; ?></span>
+                                <div style="display: flex; align-items: flex-start; gap: 16px; padding: 25px; background: var(--light-bg); border-radius: 20px; border: 1px solid var(--border-color); transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); height: 100%; box-shadow: 0 4px 15px rgba(0,0,0,0.02);" onmouseover="this.style.transform='translateY(-5px)'; this.style.borderColor='var(--secondary-color)'; this.style.boxShadow='0 15px 30px rgba(6,182,212,0.1)';" onmouseout="this.style.transform='translateY(0)'; this.style.borderColor='var(--border-color)'; this.style.boxShadow='0 4px 15px rgba(0,0,0,0.02)';">
+                                    <div style="min-width: 32px; height: 32px; border-radius: 50%; background: rgba(6,182,212,0.1); display: flex; align-items: center; justify-content: center; color: var(--secondary-color); font-size: 14px; margin-top: 2px;">
+                                        <i class="fas fa-check"></i>
+                                    </div>
+                                    <span style="font-weight: 700; font-size: 15px; color: var(--heading-color); line-height: 1.5;"><?php echo $feature; ?></span>
                                 </div>
                             </div>
                         <?php endforeach; ?>
@@ -243,24 +245,52 @@ $service = isset($services_data[$type]) ? $services_data[$type] : $services_data
                 </div>
 
                 <!-- Process Section -->
-                <div class="card pc-detail-card">
-                    <h3 style="font-size: 24px; font-weight: 800; color: var(--heading-color); margin-bottom: 35px;">Our Approach & Process</h3>
+                <div class="card pc-detail-card" style="margin-bottom: 40px; border: none; box-shadow: var(--shadow);">
+                    <h3 style="font-size: 22px; font-weight: 800; color: var(--heading-color); margin-bottom: 35px; display: flex; align-items: center; gap: 10px;"><i class="fas fa-route" style="color: var(--secondary-color); font-size: 16px;"></i> Our Approach & Process</h3>
 
-                    <div style="position: relative;">
+                    <div style="position: relative; padding-left: 10px;">
                         <!-- Vertical Line -->
-                        <div style="position: absolute; left: 25px; top: 0; height: 100%; width: 2px; background: rgba(6, 182, 212, 0.1);"></div>
+                        <div style="position: absolute; left: 35px; top: 20px; height: calc(100% - 40px); width: 2px; background: linear-gradient(to bottom, var(--secondary-color), rgba(6,182,212,0.0)); border-radius: 2px;"></div>
 
                         <?php foreach ($service['process'] as $index => $step): ?>
-                            <div style="display: flex; gap: 30px; margin-bottom: 40px; position: relative; z-index: 2;">
-                                <div style="width: 50px; min-width: 50px; height: 50px; background: #fff; border: 2px solid var(--secondary-color); color: var(--secondary-color); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 18px;">
-                                    <?php echo $index + 1; ?>
+                            <div style="display: flex; gap: 30px; margin-bottom: 35px; position: relative; z-index: 2; align-items: flex-start; transition: transform 0.3s;" onmouseover="this.style.transform='translateX(10px)'" onmouseout="this.style.transform='translateX(0)'">
+                                <div style="width: 50px; min-width: 50px; height: 50px; background: var(--bg-color); border: 2px solid var(--secondary-color); color: var(--secondary-color); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 900; font-size: 18px; box-shadow: 0 0 15px rgba(6,182,212,0.2);">
+                                    0<?php echo $index + 1; ?>
                                 </div>
-                                <div>
-                                    <h4 style="font-size: 18px; font-weight: 700; color: var(--heading-color); margin-bottom: 8px;"><?php echo $step['title']; ?></h4>
-                                    <p style="font-size: 15px; color: var(--text-color); margin: 0; line-height: 1.6;"><?php echo $step['desc']; ?></p>
+                                <div style="padding: 20px 25px; background: var(--light-bg); border-radius: 16px; border: 1px solid var(--border-color); width: 100%; box-shadow: 0 4px 15px rgba(0,0,0,0.02);">
+                                    <h4 style="font-size: 17px; font-weight: 800; color: var(--heading-color); margin-bottom: 8px;"><?php echo $step['title']; ?></h4>
+                                    <p style="font-size: 14px; color: var(--text-color); margin: 0; line-height: 1.7;"><?php echo $step['desc']; ?></p>
                                 </div>
                             </div>
                         <?php endforeach; ?>
+                    </div>
+                </div>
+
+                <!-- Technologies Used Section -->
+                <div class="card pc-detail-card" style="border: none; box-shadow: var(--shadow);">
+                    <h3 style="font-size: 22px; font-weight: 800; color: var(--heading-color); margin-bottom: 25px; display: flex; align-items: center; gap: 10px;"><i class="fas fa-layer-group" style="color: var(--secondary-color); font-size: 16px;"></i> Technologies We Work With</h3>
+                    <div style="display: flex; flex-wrap: wrap; gap: 15px;">
+                        <div style="display: flex; align-items: center; gap: 10px; padding: 12px 20px; background: var(--light-bg); border: 1px solid var(--border-color); border-radius: 12px; transition: 0.3s;" onmouseover="this.style.transform='translateY(-3px)'; this.style.borderColor='#777BB4';" onmouseout="this.style.transform='translateY(0)'; this.style.borderColor='var(--border-color)';">
+                            <i class="fab fa-php fs-20" style="color: #777BB4;"></i><span style="font-size: 13px; font-weight: 700; color: var(--heading-color);">PHP 8+</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 10px; padding: 12px 20px; background: var(--light-bg); border: 1px solid var(--border-color); border-radius: 12px; transition: 0.3s;" onmouseover="this.style.transform='translateY(-3px)'; this.style.borderColor='#F55247';" onmouseout="this.style.transform='translateY(0)'; this.style.borderColor='var(--border-color)';">
+                            <i class="fab fa-laravel fs-20" style="color: #F55247;"></i><span style="font-size: 13px; font-weight: 700; color: var(--heading-color);">Laravel</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 10px; padding: 12px 20px; background: var(--light-bg); border: 1px solid var(--border-color); border-radius: 12px; transition: 0.3s;" onmouseover="this.style.transform='translateY(-3px)'; this.style.borderColor='#339933';" onmouseout="this.style.transform='translateY(0)'; this.style.borderColor='var(--border-color)';">
+                            <i class="fab fa-node-js fs-20" style="color: #339933;"></i><span style="font-size: 13px; font-weight: 700; color: var(--heading-color);">Node.js</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 10px; padding: 12px 20px; background: var(--light-bg); border: 1px solid var(--border-color); border-radius: 12px; transition: 0.3s;" onmouseover="this.style.transform='translateY(-3px)'; this.style.borderColor='#61DAFB';" onmouseout="this.style.transform='translateY(0)'; this.style.borderColor='var(--border-color)';">
+                            <i class="fab fa-react fs-20" style="color: #61DAFB;"></i><span style="font-size: 13px; font-weight: 700; color: var(--heading-color);">React</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 10px; padding: 12px 20px; background: var(--light-bg); border: 1px solid var(--border-color); border-radius: 12px; transition: 0.3s;" onmouseover="this.style.transform='translateY(-3px)'; this.style.borderColor='#FF9900';" onmouseout="this.style.transform='translateY(0)'; this.style.borderColor='var(--border-color)';">
+                            <i class="fab fa-aws fs-20" style="color: #FF9900;"></i><span style="font-size: 13px; font-weight: 700; color: var(--heading-color);">AWS</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 10px; padding: 12px 20px; background: var(--light-bg); border: 1px solid var(--border-color); border-radius: 12px; transition: 0.3s;" onmouseover="this.style.transform='translateY(-3px)'; this.style.borderColor='#2496ED';" onmouseout="this.style.transform='translateY(0)'; this.style.borderColor='var(--border-color)';">
+                            <i class="fab fa-docker fs-20" style="color: #2496ED;"></i><span style="font-size: 13px; font-weight: 700; color: var(--heading-color);">Docker</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 10px; padding: 12px 20px; background: var(--light-bg); border: 1px solid var(--border-color); border-radius: 12px; transition: 0.3s;" onmouseover="this.style.transform='translateY(-3px)'; this.style.borderColor='#000000';" onmouseout="this.style.transform='translateY(0)'; this.style.borderColor='var(--border-color)';">
+                            <i class="fab fa-figma fs-20" style="color: #F24E1E;"></i><span style="font-size: 13px; font-weight: 700; color: var(--heading-color);">UI/UX</span>
+                        </div>
                     </div>
                 </div>
 

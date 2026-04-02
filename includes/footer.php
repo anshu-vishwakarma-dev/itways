@@ -1,26 +1,20 @@
     <!-- Global Call To Action -->
-    <section class="cta-section" style="background: linear-gradient(135deg, var(--primary-color, #041E42), var(--secondary-color, #06B6D4)); padding: 80px 0; text-align: center; color: #fff; position: relative; overflow: hidden;">
-        <!-- Background Elements -->
-        <div style="position: absolute; top: -50px; left: -50px; width: 200px; height: 200px; background: rgba(255,255,255,0.1); border-radius: 50%; filter: blur(20px);"></div>
-        <div style="position: absolute; bottom: -50px; right: -50px; width: 250px; height: 250px; background: rgba(255,255,255,0.1); border-radius: 50%; filter: blur(20px);"></div>
+    <!-- Global Call To Action -->
+    <section class="cta-section" style="padding: 60px 0; text-align: center; color: #fff; position: relative; overflow: hidden; background: linear-gradient(-45deg, #041E42, #06B6D4, #041E42, #06B6D4); background-size: 400% 400%; animation: gradientBG 15s ease infinite;">
 
-        <div class="container" style="position: relative; z-index: 2;">
-            <h2 style="color: #fff; font-size: clamp(2rem, 5vw, 2.1rem); font-weight: 800; margin-bottom: 20px; text-shadow: 0 2px 10px rgba(0,0,0,0.1);">Ready to Elevate Your Business?</h2>
-            <p style="font-size: 1.1rem; max-width: 700px; margin: 0 auto 40px; opacity: 0.9; line-height: 1.6;">Join hands with ITways to unlock innovative tech solutions, robust software development, and unparalleled IT support tailored to your success margin.</p>
-            <a href="<?php echo $base_url; ?>contact/" class="cta-btn" style="background-color: #fff; color: var(--primary-color, #041E42); padding: 12px 20px; font-size: 16px; font-weight: 700; border-radius: 50px; text-decoration: none; display: inline-flex; align-items: center; gap: 10px; box-shadow: 0 10px 20px rgba(0,0,0,0.1); transition: all 0.3s ease;">
-                Start Your Project Today <i class="fas fa-arrow-right"></i>
+        <!-- Floating Glass Elements -->
+        <div class="glass-shape shape-1"></div>
+        <div class="glass-shape shape-2"></div>
+        <div class="glass-shape shape-3"></div>
+
+        <div class="container" style="position: relative; z-index: 2;" data-aos="fade-up">
+            <h3 style="color: #fff; font-size: clamp(1.0rem, 6vw, 1.5rem); font-weight: 800;">Ready to Elevate Your Business?</h3>
+            <p style="font-size: 1.2rem; max-width: 700px; margin: 0 auto 40px; color: rgba(255,255,255,0.9); line-height: 1.8;">Join hands with ITways to unlock innovative tech solutions, robust software development, and unparalleled IT support tailored to your success.</p>
+
+            <a href="<?php echo $base_url; ?>contact.php" class="cta-animated-btn">
+                <span>Start Your Project</span>
+                <i class="fas fa-arrow-right"></i>
             </a>
-            <style>
-                .cta-btn:hover {
-                    transform: translateY(-5px);
-                    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2) !important;
-                    color: var(--secondary-color, #06B6D4) !important;
-                }
-
-                .cta-btn:active {
-                    transform: translateY(-2px);
-                }
-            </style>
         </div>
     </section>
 
@@ -81,7 +75,6 @@
                     <button type="submit" class="btn btn-primary" style="width: 100%; padding: 14px; border-radius: 12px; font-weight: 700;">Send Message</button>
                 </form>
             </div>
-
         </div>
 
         <!-- Bottom Bar -->

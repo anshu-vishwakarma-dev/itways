@@ -27,7 +27,7 @@
     <div class="floating-shape-v2 shape-purple"></div> -->
     <div class="container" style="position: relative; z-index: 5;">
 
-        <div class="corporate-badge" data-aos="fade-up" style="display: inline-flex; align-items: center; gap: 10px; padding: 8px 20px; background: rgba(14, 165, 233, 0.1); border: 1px solid rgba(14, 165, 233, 0.2); border-radius: 50px; color: var(--secondary-color); font-weight: 700; font-size: 12px; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 25px; backdrop-filter: blur(10px);">
+        <div class="corporate-badge" data-aos="fade-up">
             <span style="width: 8px; height: 8px; background: var(--secondary-color); border-radius: 50%; display: inline-block; animation: pulse-blue 2s infinite;"></span>
             Trusted Technology Partner Since 2013
         </div>
@@ -205,21 +205,21 @@
 <!-- Stats Counter Section -->
 <section class="section stats-container idx-stats-section" style="background: var(--light-bg);">
     <div class="container idx-stats-grid">
-        <div class="stat-item idx-stat-box" style="background: var(--card-bg); border: 1px solid var(--border-color); padding: 40px; border-radius: 24px; box-shadow: var(--shadow);">
-            <h4 class="idx-stat-val" style="color: var(--secondary-color); font-size: 48px; font-weight: 800; margin-bottom: 10px;"><span class="counter" data-target="10">0</span>+</h4>
-            <p class="idx-stat-text" style="color: var(--heading-color); font-weight: 600; font-size: 16px;">Years of Experience</p>
+        <div class="stat-item idx-stat-box" style="background: var(--card-bg); padding: 40px; border-radius: 24px; box-shadow: var(--shadow);">
+            <h4 class="idx-stat-val"><span class="counter" data-target="10">0</span>+</h4>
+            <p class="idx-stat-text">Years of Experience</p>
         </div>
-        <div class="stat-item idx-stat-box" style="background: var(--card-bg); border: 1px solid var(--border-color); padding: 40px; border-radius: 24px; box-shadow: var(--shadow);">
-            <h4 class="idx-stat-val" style="color: var(--secondary-color); font-size: 48px; font-weight: 800; margin-bottom: 10px;"><span class="counter" data-target="321">0</span>+</h4>
-            <p class="idx-stat-text" style="color: var(--heading-color); font-weight: 600; font-size: 16px;">Projects Completed</p>
+        <div class="stat-item idx-stat-box" style="background: var(--card-bg); padding: 40px; border-radius: 24px; box-shadow: var(--shadow);">
+            <h4 class="idx-stat-val"><span class="counter" data-target="321">0</span>+</h4>
+            <p class="idx-stat-text">Projects Completed</p>
         </div>
-        <div class="stat-item idx-stat-box" style="background: var(--card-bg); border: 1px solid var(--border-color); padding: 40px; border-radius: 24px; box-shadow: var(--shadow);">
-            <h4 class="idx-stat-val" style="color: var(--secondary-color); font-size: 48px; font-weight: 800; margin-bottom: 10px;"><span class="counter" data-target="280">0</span>+</h4>
-            <p class="idx-stat-text" style="color: var(--heading-color); font-weight: 600; font-size: 16px;">Satisfied Customers</p>
+        <div class="stat-item idx-stat-box" style="background: var(--card-bg); padding: 40px; border-radius: 24px; box-shadow: var(--shadow);">
+            <h4 class="idx-stat-val"><span class="counter" data-target="280">0</span>+</h4>
+            <p class="idx-stat-text">Satisfied Customers</p>
         </div>
-        <div class="stat-item idx-stat-box" style="background: var(--card-bg); border: 1px solid var(--border-color); padding: 40px; border-radius: 24px; box-shadow: var(--shadow);">
-            <h4 class="idx-stat-val" style="color: var(--secondary-color); font-size: 48px; font-weight: 800; margin-bottom: 10px;"><span class="counter" data-target="17">0</span>+</h4>
-            <p class="idx-stat-text" style="color: var(--heading-color); font-weight: 600; font-size: 16px;">Expert Workers</p>
+        <div class="stat-item idx-stat-box" style="background: var(--card-bg); padding: 40px; border-radius: 24px; box-shadow: var(--shadow);">
+            <h4 class="idx-stat-val"><span class="counter" data-target="17">0</span>+</h4>
+            <p class="idx-stat-text">Expert Workers</p>
         </div>
     </div>
 </section>
