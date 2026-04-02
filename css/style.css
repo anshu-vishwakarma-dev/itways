@@ -257,7 +257,6 @@ ul {
 
 .btn {
     display: inline-block;
-    /* padding: 14px 32px; */
     border: 2px solid var(--secondary-color);
     color: var(--secondary-color);
     border-radius: var(--radius-pill);
@@ -315,7 +314,6 @@ h4,
 h5,
 h6 {
     color: var(--heading-color);
-    /* margin-bottom: 20px; */
     font-weight: 800;
     letter-spacing: -0.03em;
 }
@@ -916,14 +914,6 @@ body.dark-mode .dropdown-menu li a:hover {
 .chat-btn {
     background: #1e40af;
     /* primary-like robust blue */
-    /* width: 55px !important; */
-    /* height: 55px !important; */
-    /* padding: 0 !important; */
-    /* border-radius: 50% !important; */
-    /* font-size: 24px !important; */
-    /* display: flex; */
-    /* justify-content: center; */
-    /* align-items: center; */
 }
 
 .chat-label {
@@ -998,7 +988,6 @@ body.dark-mode .dropdown-menu li a:hover {
 
 .chat-box-body {
     padding: 20px;
-    /* height: 350px; */
     overflow-y: auto;
     display: flex;
     flex-direction: column;
@@ -2090,7 +2079,6 @@ textarea:focus {
 }
 
 .ab-story-text {
-    /* font-size: 18px !important; */
     color: var(--text-color) !important;
     margin-bottom: 10px !important;
     line-height: 1.8 !important;
@@ -2169,10 +2157,8 @@ textarea:focus {
 }
 
 .corporate-sub-hero h1 {
-    /* font-size: clamp(40px, 6vw, 64px); */
     font-weight: 900;
     color: var(--heading-color);
-    /* margin-bottom: 25px; */
     letter-spacing: -0.04em;
     line-height: 1.1;
 }
@@ -2493,7 +2479,6 @@ textarea:focus {
 
 .pc-product-image {
     width: 100% !important;
-    /* height: 600px !important; */
     border-radius: 8px !important;
     box-shadow: var(--shadow) !important;
 }
@@ -3687,7 +3672,6 @@ textarea:focus {
     background: #fff;
     color: var(--primary-color);
     padding: 10px 30px;
-    /* font-size: 18px; */
     font-weight: 800;
     border-radius: 50px;
     text-decoration: none;
