@@ -134,6 +134,44 @@ $services_data = [
             ['title' => 'Installation', 'desc' => 'Setting up the surveillance matrix.'],
             ['title' => 'Training', 'desc' => 'Showing how to access and export.']
         ]
+    ],
+    'digital-consulting' => [
+        'title' => 'Digital Consulting',
+        'icon' => 'fas fa-chart-line',
+        'badge' => 'Strategic Planning',
+        'short_desc' => 'Our research based and goal driven approach in consulting, lays the perfect foundation and strategy.',
+        'description' => 'We help businesses navigate the complexities of digital transformation. Our consultants provide actionable roadmaps to modernize your infrastructure and optimize operations.',
+        'features' => [
+            'Digital transformation roadmaps',
+            'IT infrastructure assessment',
+            'Business process automation',
+            'Technology stack audits'
+        ],
+        'process' => [
+            ['title' => 'Discovery', 'desc' => 'Analyzing your current business state.'],
+            ['title' => 'Strategy', 'desc' => 'Developing a data-driven path forward.'],
+            ['title' => 'Execution', 'desc' => 'Guiding the implementation process.'],
+            ['title' => 'Review', 'desc' => 'Measuring success and ROI.']
+        ]
+    ],
+    'mobile-app-solutions' => [
+        'title' => 'Mobile App Solutions',
+        'icon' => 'fas fa-mobile-alt',
+        'badge' => 'Interactive Apps',
+        'short_desc' => 'Immersive mobile app solutions, that transforms businesses and deliver great customer experience.',
+        'description' => 'We build native and cross-platform mobile applications that provide intuitive user experiences. Our apps are built to scale and perform flawlessly under heavy loads.',
+        'features' => [
+            'Native iOS & Android development',
+            'Cross-platform (Flutter/React Native)',
+            'UI/UX design for mobile',
+            'Backend API development'
+        ],
+        'process' => [
+            ['title' => 'Strategy', 'desc' => 'Defining the app purpose and audience.'],
+            ['title' => 'Design', 'desc' => 'Creating interactive prototypes.'],
+            ['title' => 'Development', 'desc' => 'Coding the app and backend APIs.'],
+            ['title' => 'Launch', 'desc' => 'App Store and Google Play deployment.']
+        ]
     ]
 ];
 
@@ -238,13 +276,26 @@ $service = isset($services_data[$type]) ? $services_data[$type] : $services_data
                         <div style="position: absolute; top: -50px; right: -50px; width: 150px; height: 150px; background: var(--secondary-color); filter: blur(80px); opacity: 0.2;"></div>
 
                         <h4 style="font-size: 20px; font-weight: 800; margin-bottom: 10px;">Get a Quote</h4>
-                        <p style="font-size: 14px; opacity: 0.7; margin-bottom: 25px;">Ready to start your project? Let's discuss your requirements.</p>
+                        <p style="font-size: 14px; opacity: 0.7; margin-bottom: 25px; color: #111;">Ready to start your project? Let's discuss your requirements.</p>
 
                         <form style="display: flex; flex-direction: column; gap: 12px;">
-                            <input type="text" placeholder="Full Name" style="padding: 14px; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; color: #fff; outline: none; transition: 0.3s; font-size: 14px;" onfocus="this.style.borderColor='var(--secondary-color)'">
-                            <input type="tel" placeholder="Phone Number" style="padding: 14px; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; color: #fff; outline: none; transition: 0.3s; font-size: 14px;" onfocus="this.style.borderColor='var(--secondary-color)'">
-                            <textarea placeholder="Tell us about your project..." rows="3" style="padding: 14px; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; color: #fff; outline: none; transition: 0.3s; font-size: 14px;" onfocus="this.style.borderColor='var(--secondary-color)'"></textarea>
-                            <button type="submit" class="btn btn-primary" style="padding: 14px; font-weight: 800; font-size: 15px; margin-top: 10px;">Send Message <i class="fas fa-paper-plane ms-2"></i></button>
+                            <input type="text" placeholder="Your Name" style="width: 100%; padding: 12px 14px; background: var(--bg-color); border: 1px solid var(--border-color); border-radius: 10px; color: var(--heading-color); outline: none; transition: 0.3s; font-size: 13px;" onfocus="this.style.borderColor='var(--secondary-color)'" onblur="this.style.borderColor='var(--border-color)'">
+                            <input type="email" placeholder="Email Address" style="width: 100%; padding: 12px 14px; background: var(--bg-color); border: 1px solid var(--border-color); border-radius: 10px; color: var(--heading-color); outline: none; transition: 0.3s; font-size: 13px;" onfocus="this.style.borderColor='var(--secondary-color)'" onblur="this.style.borderColor='var(--border-color)'">
+                            <input type="tel" placeholder="Phone Number" style="width: 100%; padding: 12px 14px; background: var(--bg-color); border: 1px solid var(--border-color); border-radius: 10px; color: var(--heading-color); outline: none; transition: 0.3s; font-size: 13px;" onfocus="this.style.borderColor='var(--secondary-color)'" onblur="this.style.borderColor='var(--border-color)'">
+                            <div style="position: relative;">
+                                <select style="width: 100%; padding: 12px 14px; background: var(--bg-color); border: 1px solid var(--border-color); border-radius: 10px; color: var(--text-color); outline: none; transition: 0.3s; font-size: 13px; appearance: none;">
+                                    <option value="" disabled selected>Select Interest</option>
+                                    <option value="crm">CRM Application</option>
+                                    <option value="custom">Custom Application</option>
+                                    <option value="web">Web Development</option>
+                                    <option value="ecommerce">E-Commerce</option>
+                                    <option value="other">Other</option>
+                                </select>
+                                <i class="fas fa-chevron-down" style="position: absolute; right: 15px; top: 50%; transform: translateY(-50%); font-size: 10px; color: var(--text-color); pointer-events: none;"></i>
+                            </div>
+                            <button type="submit" class="btn btn-primary" style="width: 100%; padding: 12px; font-size: 14px; font-weight: 800; border-radius: 10px;">
+                                <i class="fas fa-paper-plane" style="margin-right: 6px;"></i> Send
+                            </button>
                         </form>
                     </div>
 

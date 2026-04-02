@@ -38,8 +38,8 @@
                 </ul>
                 <div class="pc-product-price">₹14,000.00</div>
                 <div class="d-flex-align-center-gap-20-wrap">
-                    <a href="<?php echo $base_url; ?>product-details/" class="btn btn-primary px-30 fw-800"><i class="fas fa-eye me-1"></i> View Details</a>
-                    <a href="<?php echo $base_url; ?>contact/" class="btn btn-outline px-30 fw-800">Purchase Now</a>
+                    <a href="<?php echo $base_url; ?>product-details.php?type=real-estate-crm" class="btn btn-primary px-30 fw-800"><i class="fas fa-eye me-1"></i> View Details</a>
+                    <a href="<?php echo $base_url; ?>contact.php" class="btn btn-outline px-30 fw-800">Purchase Now</a>
                 </div>
             </div>
         </div>
@@ -65,8 +65,8 @@
                 </ul> -->
                 <!-- <div class="pc-product-price">₹14,000.00</div> -->
                 <div class="d-flex-align-center-gap-20-wrap">
-                    <a href="<?php echo $base_url; ?>product-details/" class="btn btn-primary px-30 fw-800"><i class="fas fa-eye me-1"></i> View Details</a>
-                    <!-- <a href="<?php echo $base_url; ?>contact/" class="btn btn-outline px-30 fw-800">Purchase Now</a> -->
+                    <a href="<?php echo $base_url; ?>product-details.php?type=agent-crm" class="btn btn-primary px-30 fw-800"><i class="fas fa-eye me-1"></i> View Details</a>
+                    <!-- <a href="<?php echo $base_url; ?>contact.php" class="btn btn-outline px-30 fw-800">Purchase Now</a> -->
                 </div>
             </div>
         </div>
@@ -93,8 +93,8 @@
                 </ul> -->
                 <!-- <div class="pc-product-price">₹14,000.00</div> -->
                 <div class="d-flex-align-center-gap-20-wrap">
-                    <a href="<?php echo $base_url; ?>product-details/" class="btn btn-primary px-30 fw-800"><i class="fas fa-eye me-1"></i> View Details</a>
-                    <!-- <a href="<?php echo $base_url; ?>contact/" class="btn btn-outline px-30 fw-800">Purchase Now</a> -->
+                    <a href="<?php echo $base_url; ?>product-details.php?type=developer-crm" class="btn btn-primary px-30 fw-800"><i class="fas fa-eye me-1"></i> View Details</a>
+                    <!-- <a href="<?php echo $base_url; ?>contact.php" class="btn btn-outline px-30 fw-800">Purchase Now</a> -->
                 </div>
             </div>
         </div>
@@ -121,8 +121,8 @@
                 </ul> -->
                 <!-- <div class="pc-product-price">₹14,000.00</div> -->
                 <div class="d-flex-align-center-gap-20-wrap">
-                    <a href="<?php echo $base_url; ?>product-details/" class="btn btn-primary px-30 fw-800"><i class="fas fa-eye me-1"></i> View Details</a>
-                    <!-- <a href="<?php echo $base_url; ?>contact/" class="btn btn-outline px-30 fw-800">Purchase Now</a> -->
+                    <a href="<?php echo $base_url; ?>product-details.php?type=builder-crm" class="btn btn-primary px-30 fw-800"><i class="fas fa-eye me-1"></i> View Details</a>
+                    <!-- <a href="<?php echo $base_url; ?>contact.php" class="btn btn-outline px-30 fw-800">Purchase Now</a> -->
                 </div>
             </div>
         </div>

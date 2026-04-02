@@ -28,8 +28,10 @@ body.dark-mode {
     --secondary-color: #0ea5e9;
     --accent-color: #22d3ee;
     --bg-color: #020617;
-    --light-bg: #030816; /* Deeper dark for more contrast */
-    --text-color: #cbd5e1; /* Brighter default text */
+    --light-bg: #030816;
+    /* Deeper dark for more contrast */
+    --text-color: #cbd5e1;
+    /* Brighter default text */
     --heading-color: #ffffff;
     --border-color: rgba(255, 255, 255, 0.12);
     --card-bg: rgba(15, 23, 42, 0.6);
@@ -53,7 +55,7 @@ body.dark-mode .cr-job-title-v2 {
 
 /* Force Light Text on All Paragraphs and Spans in Dark Mode */
 body.dark-mode p,
-body.dark-mode span:not(.contact-icon-box i), 
+body.dark-mode span:not(.contact-icon-box i),
 body.dark-mode li,
 body.dark-mode label,
 body.dark-mode .paragraph,
@@ -61,7 +63,8 @@ body.dark-mode .text-muted,
 body.dark-mode .fs-16,
 body.dark-mode .contact-card-text,
 body.dark-mode .ab-story-text {
-    color: #e2e8f0 !important; /* Brighter e2e8f0 */
+    color: #e2e8f0 !important;
+    /* Brighter e2e8f0 */
 }
 
 /* Dark Mode Variables */
@@ -157,8 +160,8 @@ header {
     transition: all 0.3s ease;
 }
 
-body.dark-mode header {
-    background: #0f172a;
+body.dark-mode header#header {
+    background: #0f172a !important;
 }
 
 .floating-btn.dark-toggle {
@@ -191,7 +194,8 @@ body.dark-mode .card {
 }
 
 body.dark-mode .bg-light-bg {
-    background-color: #020617 !important; /* Force deep dark */
+    background-color: #020617 !important;
+    /* Force deep dark */
 }
 
 .hero-aura {
@@ -365,14 +369,15 @@ h6 {
    HEADER — itwaysindia.com Style
    ============================================= */
 header#header {
-    position: sticky;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
+    position: fixed !important;
+    /* Forced fixed for absolute reliability */
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    z-index: 1000 !important;
     background: #ffffff;
     box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
-    transition: box-shadow 0.3s ease;
+    transition: all 0.3s ease-in-out;
 }
 
 body.dark-mode header#header {
@@ -3119,6 +3124,8 @@ textarea:focus {
     z-index: 1;
 }
 
+
+
 .cr-job-card-v2::before {
     content: '';
     position: absolute;
@@ -3659,11 +3666,12 @@ textarea:focus {
    ========================================================================== */
 
 /* --- GLOBAL TEXT & ELEMENT FIXES --- */
-body.dark-mode, 
+body.dark-mode,
 body.dark-mode p,
 body.dark-mode .card p,
 body.dark-mode .service-card p,
-body.dark-mode .pc-product-card p, /* Fixed from .product-card */
+body.dark-mode .pc-product-card p,
+/* Fixed from .product-card */
 body.dark-mode .feat-item span,
 body.dark-mode .idx-contact-method p,
 body.dark-mode .idx-contact-method h4,
@@ -3713,7 +3721,8 @@ body.dark-mode .card {
 }
 
 body.dark-mode .contact-premium-card {
-    background: rgba(15, 23, 42, 0.8) !important; /* Darker background for better contrast */
+    background: rgba(15, 23, 42, 0.8) !important;
+    /* Darker background for better contrast */
     border: 1px solid rgba(255, 255, 255, 0.1) !important;
     backdrop-filter: blur(20px);
 }
@@ -3874,14 +3883,49 @@ body.dark-mode .pc-product-card {
     border: 1px solid rgba(255, 255, 255, 0.1) !important;
 }
 
-/* --- SERVICES PAGE --- */
-body.dark-mode .service-detail p,
-body.dark-mode .pc-detail-card p {
-    color: #cbd5e1 !important;
+/* =============================================
+   FINAL BULLETPROOF HEADER FIX
+   ============================================= */
+/* Force header to be fixed regardless of any previous rules */
+header#header,
+#header {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    z-index: 9999 !important;
+    background: #ffffff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transform: none !important;
+    /* Prevent AOS or other libs from breaking fixed pos */
+    transition: all 0.3s ease-in-out;
 }
 
-body.dark-mode .service-detail h3 {
-    color: #ffffff !important;
+body.dark-mode header#header,
+body.dark-mode #header {
+    background: #0f172a !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Ensure body padding matches header height */
+body {
+    padding-top: var(--header-height, 118px) !important;
+}
+
+@media (max-width: 991px) {
+    body {
+        padding-top: 80px !important;
+    }
+}
+
+/* Final Visibility Patch for Dark Mode */
+body.dark-mode .service-card p,
+body.dark-mode .product-card p,
+body.dark-mode .pc-product-card p,
+body.dark-mode .industry-item span,
+body.dark-mode .feat-item span,
+body.dark-mode .contact-card-text {
+    color: #e2e8f0 !important;
 }
 
 /* --- SERVICE DETAILS PAGE --- */
