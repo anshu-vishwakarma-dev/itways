@@ -172,6 +172,31 @@ $webPageSchema = [
     'description' => $seo['description'],
     'url' => $canonicalUrl
 ];
+
+// Breadcrumb Schema
+$breadcrumbs = [
+    [
+        '@type' => 'ListItem',
+        'position' => 1,
+        'name' => 'Home',
+        'item' => $siteUrl . $base_url
+    ]
+];
+
+if ($currentPage !== 'index.php') {
+    $breadcrumbs[] = [
+        '@type' => 'ListItem',
+        'position' => 2,
+        'name' => ucwords(str_replace(['.php', '-'], ['', ' '], $currentPage)),
+        'item' => $canonicalUrl
+    ];
+}
+
+$breadcrumbSchema = [
+    '@context' => 'https://schema.org',
+    '@type' => 'BreadcrumbList',
+    'itemListElement' => $breadcrumbs
+];
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -213,6 +238,7 @@ $webPageSchema = [
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <script type="application/ld+json"><?php echo json_encode($organizationSchema, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE); ?></script>
     <script type="application/ld+json"><?php echo json_encode($webPageSchema, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE); ?></script>
+    <script type="application/ld+json"><?php echo json_encode($breadcrumbSchema, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE); ?></script>
 </head>
 
 <body>

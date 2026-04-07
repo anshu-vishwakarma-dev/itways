@@ -25,7 +25,13 @@
             <div class="footer-box">
                 <a href="<?php echo $base_url; ?>" class="logo" style="font-size: 28px; font-weight: 800; color: #fff; letter-spacing: 1px;">IT Ways</a>
                 <p style="margin-top: 20px; line-height: 1.6; color: rgba(255,255,255,0.7);">We offer our clients technology solutions that add real value to their business. It’s simple we understand that our success is measured by the success of our clients.</p>
-                <p style="margin-top: 15px; font-size: 12px; color: rgba(255,255,255,0.4);">Copyright &copy; 2011 &ndash; <?php echo date('Y'); ?> IT WAYS. All Rights Reserved.</p>
+                <div class="footer-social-links" style="margin-top: 25px; display: flex; gap: 15px;">
+                    <a href="https://facebook.com/itwaysindia" target="_blank" style="width: 40px; height: 40px; border-radius: 50%; background: rgba(255,255,255,0.05); display: flex; align-items: center; justify-content: center; color: #fff; transition: 0.3s; border: 1px solid rgba(255,255,255,0.1);"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://linkedin.com/company/itwaysindia" target="_blank" style="width: 40px; height: 40px; border-radius: 50%; background: rgba(255,255,255,0.05); display: flex; align-items: center; justify-content: center; color: #fff; transition: 0.3s; border: 1px solid rgba(255,255,255,0.1);"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://twitter.com/itwaysindia" target="_blank" style="width: 40px; height: 40px; border-radius: 50%; background: rgba(255,255,255,0.05); display: flex; align-items: center; justify-content: center; color: #fff; transition: 0.3s; border: 1px solid rgba(255,255,255,0.1);"><i class="fab fa-x-twitter"></i></a>
+                    <a href="https://instagram.com/itwaysindia" target="_blank" style="width: 40px; height: 40px; border-radius: 50%; background: rgba(255,255,255,0.05); display: flex; align-items: center; justify-content: center; color: #fff; transition: 0.3s; border: 1px solid rgba(255,255,255,0.1);"><i class="fab fa-instagram"></i></a>
+                </div>
+                <p style="margin-top: 25px; font-size: 12px; color: rgba(255,255,255,0.4);">Copyright &copy; 2011 &ndash; <?php echo date('Y'); ?> IT WAYS. All Rights Reserved.</p>
             </div>
 
             <!-- Column 2: Working Hours -->

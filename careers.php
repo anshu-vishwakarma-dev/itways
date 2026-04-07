@@ -15,7 +15,7 @@
         <div class="corporate-badge" data-aos="fade-up">
             <i class="fas fa-users"></i> Join the Mission
         </div>
-        <h2 data-aos="fade-up" data-aos-delay="100">Featured <span style="color: var(--secondary-color);">Opportunities</span></h2>
+        <h1 data-aos="fade-up" data-aos-delay="100">Featured <span style="color: var(--secondary-color);">Opportunities</span></h1>
         <p data-aos="fade-up" data-aos-delay="200">Shape Your Future with IT WAYS Internships & Training Programs</p>
     </div>
 </section>

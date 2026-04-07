@@ -156,7 +156,29 @@ $products_data = [
 $type = isset($_GET['type']) ? $_GET['type'] : 'real-estate-crm';
 $product = isset($products_data[$type]) ? $products_data[$type] : $products_data['real-estate-crm'];
 
+// Product Schema
+$productPrice = floatval(str_replace(['₹', ','], '', $product['price_new']));
+$productSchema = [
+    '@context' => 'https://schema.org',
+    '@type' => 'Product',
+    'name' => $product['title'],
+    'image' => 'https://itwaysindia.com/' . $product['image'],
+    'description' => $product['short_desc'],
+    'brand' => [
+        '@type' => 'Brand',
+        'name' => 'ITWAYS'
+    ],
+    'offers' => [
+        '@type' => 'Offer',
+        'url' => 'https://itwaysindia.com/product-details.php?type=' . $type,
+        'priceCurrency' => 'INR',
+        'price' => $productPrice,
+        'availability' => 'https://schema.org/InStock',
+        'itemCondition' => 'https://schema.org/NewCondition'
+    ]
+];
 ?>
+<script type="application/ld+json"><?php echo json_encode($productSchema, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE); ?></script>
 
 <section class="corporate-sub-hero bg-grid-premium">
     <div class="mesh-bg"></div>
@@ -190,7 +212,7 @@ $product = isset($products_data[$type]) ? $products_data[$type] : $products_data
             <!-- Product Image -->
             <div class="col-lg-6 mb-4">
                 <div class="card product-main-card" data-tilt data-tilt-max="3" data-tilt-speed="400" data-tilt-glare="true" data-tilt-max-glare="0.05">
-                    <img src="<?php echo BASE_URL; ?><?php echo $product['image']; ?>" alt="<?php echo $product['title']; ?>" class="img-fluid" style="border-radius: 12px; display: block; width: 100%;">
+                    <img src="<?php echo BASE_URL; ?><?php echo $product['image']; ?>" alt="<?php echo $product['title']; ?> - ITWAYS CRM Solution" class="img-fluid" style="border-radius: 12px; display: block; width: 100%;" loading="lazy">
                 </div>
             </div>
 

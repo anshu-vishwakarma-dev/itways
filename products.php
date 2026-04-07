@@ -15,7 +15,7 @@
         <div class="corporate-badge" data-aos="fade-up">
             <i class="fas fa-box-open"></i> Portfolio
         </div>
-        <h2 data-aos="fade-up" data-aos-delay="100">Experience the Future of Real Estate Management with <span style="color: var(--secondary-color);">IT Ways CRM</span></h2>
+        <h1 data-aos="fade-up" data-aos-delay="100">Experience the Future of Real Estate Management with <span style="color: var(--secondary-color);">IT Ways CRM</span></h1>
         <p data-aos="fade-up" data-aos-delay="200">Are you a seasoned realtor or developer seeking precision, speed, and complete control over your sales journey?</p>
     </div>
 </section>
@@ -24,7 +24,7 @@
     <div class="container" data-aos="fade-up">
         <div class="card pc-product-card" data-tilt data-tilt-max="3" data-tilt-speed="400" data-tilt-glare="true" data-tilt-max-glare="0.05">
             <div>
-                <img src="<?php echo $base_url; ?>assets/image.png" alt="Real Estate CRM Pro" class="pc-product-image img-fluid">
+                <img src="<?php echo $base_url; ?>assets/image.png" alt="Real Estate CRM Pro by ITWAYS" class="pc-product-image img-fluid" loading="lazy">
             </div>
             <div>
                 <h2 class="text-secondary-color">Real Estate CRM Pro</h2>
@@ -51,7 +51,7 @@
     <div class="container" data-aos="fade-up">
         <div class="card pc-product-card" data-tilt data-tilt-max="3" data-tilt-speed="400" data-tilt-glare="true" data-tilt-max-glare="0.05">
             <div>
-                <img src="<?php echo $base_url; ?>assets/agent.png" alt="Real Estate CRM Pro" class="pc-product-image">
+                <img src="<?php echo $base_url; ?>assets/agent.png" alt="Agent CRM Software by ITWAYS" class="pc-product-image" loading="lazy">
             </div>
             <div>
                 <h2 class="text-secondary-color">Agent CRM Software</h2>
@@ -79,7 +79,7 @@
     <div class="container" data-aos="fade-up">
         <div class="card pc-product-card" data-tilt data-tilt-max="3" data-tilt-speed="400" data-tilt-glare="true" data-tilt-max-glare="0.05">
             <div>
-                <img src="<?php echo $base_url; ?>assets/developer.png" alt="Real Estate CRM Pro" class="pc-product-image">
+                <img src="<?php echo $base_url; ?>assets/developer.png" alt="Developer CRM Software by ITWAYS" class="pc-product-image" loading="lazy">
             </div>
             <div>
                 <h2 class="text-secondary-color">Developer CRM Software</h2>
@@ -107,7 +107,7 @@
     <div class="container" data-aos="fade-up">
         <div class="card pc-product-card" data-tilt data-tilt-max="3" data-tilt-speed="400" data-tilt-glare="true" data-tilt-max-glare="0.05">
             <div>
-                <img src="<?php echo $base_url; ?>assets/builder.png" alt="Real Estate CRM Pro" class="pc-product-image">
+                <img src="<?php echo $base_url; ?>assets/builder.png" alt="Builder CRM Software by ITWAYS" class="pc-product-image" loading="lazy">
             </div>
             <div>
                 <h2 class="text-secondary-color">Builder CRM Software</h2>

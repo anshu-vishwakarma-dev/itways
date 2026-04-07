@@ -175,11 +175,31 @@ $services_data = [
     ]
 ];
 
-// Get current service info
 $type = isset($_GET['type']) ? $_GET['type'] : 'software-development';
 $service = isset($services_data[$type]) ? $services_data[$type] : $services_data['software-development'];
 
+// Service Schema
+$serviceSchema = [
+    '@context' => 'https://schema.org',
+    '@type' => 'Service',
+    'serviceType' => $service['title'],
+    'provider' => [
+        '@type' => 'Organization',
+        'name' => 'ITWAYS',
+        'url' => 'https://itwaysindia.com'
+    ],
+    'description' => $service['description'],
+    'areaServed' => 'Global',
+    'hasOfferCatalog' => [
+        '@type' => 'OfferCatalog',
+        'name' => $service['title'] . ' Features',
+        'itemListElement' => array_map(function($f) {
+            return ['@type' => 'Offer', 'itemOffered' => ['@type' => 'Service', 'name' => $f]];
+        }, $service['features'])
+    ]
+];
 ?>
+<script type="application/ld+json"><?php echo json_encode($serviceSchema, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE); ?></script>
 
 <section class="corporate-sub-hero bg-grid-premium">
     <div class="mesh-bg"></div>

@@ -32,9 +32,9 @@
             Trusted Technology Partner Since 2013
         </div>
 
-        <h2 data-aos="fade-up" data-aos-delay="100">
+        <h1 data-aos="fade-up" data-aos-delay="100" style="font-size: clamp(1.5rem, 6vw, 2rem); font-weight: 800; line-height: 1.1; margin-bottom: 25px; color: var(--heading-color);">
             Driving Business Growth Through <br><span class="shimmer-text">Smart IT Solutions</span>
-        </h2>
+        </h1>
 
         <p data-aos="fade-up" data-aos-delay="200" style="max-width: 750px; margin: 0 auto 35px; font-size: clamp(16px, 2vw, 19px); color: var(--text-color); line-height: 1.7; font-weight: 400;">
             IT Ways delivers reliable and cost-effective software solutions that help businesses streamline operations, enhance customer engagement, and scale efficiently across industries.
@@ -79,7 +79,7 @@
             </div>
         </div>
         <div class="flex-1-min-300 position-relative">
-            <img src="https://images.unsplash.com/photo-1573164713988-8665fc963095?ixlib=rb-4.0.3&auto=format&fit=crop&w=1738&q=80" alt="Technology Partner" class="img-fluid hero-image-br-shadow">
+            <img src="https://images.unsplash.com/photo-1573164713988-8665fc963095?ixlib=rb-4.0.3&auto=format&fit=crop&w=1738&q=80" alt="ITWAYS Technology Partner Lucknow" class="img-fluid hero-image-br-shadow" loading="lazy">
             <div class="idx-experience-badge">
                 <span class="idx-experience-val">10+</span>
                 <span class="idx-experience-text">Years Experience</span>
@@ -98,7 +98,7 @@
             <p class="mt-20">We focus on innovation, user experience, and reliable support to help businesses achieve digital transformation. With expertise across multiple industries, we provide modern IT solutions that drive growth and efficiency.</p>
         </div>
         <div class="flex-1-min-300 position-relative">
-            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1740&q=80" alt="About ITWAYS" class="w-100-h-400-cover-br-8-shadow z-index-2 position-relative">
+            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1740&q=80" alt="About ITWAYS - Software Solutions Lucknow" class="w-100-h-400-cover-br-8-shadow z-index-2 position-relative" loading="lazy">
             <div class="idx-about-image-overlay"></div>
         </div>
     </div>

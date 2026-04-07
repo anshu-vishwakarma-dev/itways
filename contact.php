@@ -15,7 +15,7 @@
         <div class="corporate-badge" data-aos="fade-up">
             <i class="fas fa-handshake"></i> Partnership
         </div>
-        <h2 data-aos="fade-up" data-aos-delay="100">Contact IT WAYS: <span style="color: var(--secondary-color);">Your Gateway to Cutting-Edge Solutions</span></h2>
+        <h1 data-aos="fade-up" data-aos-delay="100">Contact IT WAYS: <span style="color: var(--secondary-color);">Your Gateway to Cutting-Edge Solutions</span></h1>
         <p data-aos="fade-up" data-aos-delay="200">
             Interested in our IT services or need advice? Then please get in touch and we’ll be glad to help.</p>
     </div>
@@ -156,7 +156,7 @@
             }
         </style>
         <!-- RIGHT COLUMN: Sticky Form -->
-        <div style="position: sticky; top: 120px; z-index: 10; margin-bottom: auto;">
+        <div style="position: sticky; top: 170px; z-index: 10; margin-bottom: auto;">
             <div class="card cn-form-card" data-tilt data-tilt-max="3" data-tilt-speed="400" data-tilt-glare="true" data-tilt-max-glare="0.05">
                 <h3 class="text-secondary-color mb-30">Send Us a Message</h3>
                 <form class="query-form">

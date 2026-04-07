@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://itwaysindia.com/</loc>
+    <lastmod>2024-04-06</lastmod>
+    <priority>1.00</priority>
+  </url>
+  <url>
+    <loc>https://itwaysindia.com/about/</loc>
+    <lastmod>2024-04-06</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://itwaysindia.com/services/</loc>
+    <lastmod>2024-04-06</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://itwaysindia.com/products/</loc>
+    <lastmod>2024-04-06</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://itwaysindia.com/contact/</loc>
+    <lastmod>2024-04-06</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://itwaysindia.com/careers/</loc>
+    <lastmod>2024-04-06</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <!-- Service Details -->
+  <url>
+    <loc>https://itwaysindia.com/service-details.php?type=software-development</loc>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://itwaysindia.com/service-details.php?type=website-development</loc>
+    <priority>0.70</priority>
+  </url>
+  <!-- Product Details -->
+  <url>
+    <loc>https://itwaysindia.com/product-details.php?type=real-estate-crm</loc>
+    <priority>0.70</priority>
+  </url>
+</urlset>
