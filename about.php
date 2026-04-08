@@ -5,6 +5,7 @@
     <div class="hero-aura"></div>
     <div class="hero-particles">
         <div class="particle p1"></div>
+        <!-- <div class="particle p2"></div> -->
         <div class="particle p3"></div>
         <div class="particle p5"></div>
         <div class="particle p7"></div>

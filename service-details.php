@@ -193,13 +193,15 @@ $serviceSchema = [
     'hasOfferCatalog' => [
         '@type' => 'OfferCatalog',
         'name' => $service['title'] . ' Features',
-        'itemListElement' => array_map(function($f) {
+        'itemListElement' => array_map(function ($f) {
             return ['@type' => 'Offer', 'itemOffered' => ['@type' => 'Service', 'name' => $f]];
         }, $service['features'])
     ]
 ];
 ?>
-<script type="application/ld+json"><?php echo json_encode($serviceSchema, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE); ?></script>
+<script type="application/ld+json">
+    <?php echo json_encode($serviceSchema, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE); ?>
+</script>
 
 <section class="corporate-sub-hero bg-grid-premium">
     <div class="mesh-bg"></div>
@@ -328,21 +330,13 @@ $serviceSchema = [
                         <h4 style="font-size: 20px; font-weight: 800; margin-bottom: 10px;">Get a Quote</h4>
                         <p style="font-size: 14px; opacity: 0.7; margin-bottom: 25px; color: #111;">Ready to start your project? Let's discuss your requirements.</p>
 
-                        <form style="display: flex; flex-direction: column; gap: 12px;">
-                            <input type="text" placeholder="Your Name" style="width: 100%; padding: 12px 14px; background: var(--bg-color); border: 1px solid var(--border-color); border-radius: 10px; color: var(--heading-color); outline: none; transition: 0.3s; font-size: 13px;" onfocus="this.style.borderColor='var(--secondary-color)'" onblur="this.style.borderColor='var(--border-color)'">
-                            <input type="email" placeholder="Email Address" style="width: 100%; padding: 12px 14px; background: var(--bg-color); border: 1px solid var(--border-color); border-radius: 10px; color: var(--heading-color); outline: none; transition: 0.3s; font-size: 13px;" onfocus="this.style.borderColor='var(--secondary-color)'" onblur="this.style.borderColor='var(--border-color)'">
-                            <input type="tel" placeholder="Phone Number" style="width: 100%; padding: 12px 14px; background: var(--bg-color); border: 1px solid var(--border-color); border-radius: 10px; color: var(--heading-color); outline: none; transition: 0.3s; font-size: 13px;" onfocus="this.style.borderColor='var(--secondary-color)'" onblur="this.style.borderColor='var(--border-color)'">
-                            <div style="position: relative;">
-                                <select style="width: 100%; padding: 12px 14px; background: var(--bg-color); border: 1px solid var(--border-color); border-radius: 10px; color: var(--text-color); outline: none; transition: 0.3s; font-size: 13px; appearance: none;">
-                                    <option value="" disabled selected>Select Interest</option>
-                                    <option value="crm">CRM Application</option>
-                                    <option value="custom">Custom Application</option>
-                                    <option value="web">Web Development</option>
-                                    <option value="ecommerce">E-Commerce</option>
-                                    <option value="other">Other</option>
-                                </select>
-                                <i class="fas fa-chevron-down" style="position: absolute; right: 15px; top: 50%; transform: translateY(-50%); font-size: 10px; color: var(--text-color); pointer-events: none;"></i>
-                            </div>
+                        <form class="quote-form" style="display: flex; flex-direction: column; gap: 12px;" action="<?php echo $base_url; ?>includes/form-handler.php" method="POST">
+                            <input type="hidden" name="form_type" value="Service Quote Form">
+                            <input type="hidden" name="service_product" value="<?php echo htmlspecialchars($service['title']); ?>">
+                            <input type="text" name="name" placeholder="Your Name" style="width: 100%; padding: 12px 14px; background: var(--bg-color); border: 1px solid var(--border-color); border-radius: 10px; color: var(--heading-color); outline: none; transition: 0.3s; font-size: 13px;" onfocus="this.style.borderColor='var(--secondary-color)'" onblur="this.style.borderColor='var(--border-color)'">
+                            <input type="email" name="email" placeholder="Email Address" style="width: 100%; padding: 12px 14px; background: var(--bg-color); border: 1px solid var(--border-color); border-radius: 10px; color: var(--heading-color); outline: none; transition: 0.3s; font-size: 13px;" onfocus="this.style.borderColor='var(--secondary-color)'" onblur="this.style.borderColor='var(--border-color)'">
+                            <input type="tel" name="phone" placeholder="Phone Number" style="width: 100%; padding: 12px 14px; background: var(--bg-color); border: 1px solid var(--border-color); border-radius: 10px; color: var(--heading-color); outline: none; transition: 0.3s; font-size: 13px;" onfocus="this.style.borderColor='var(--secondary-color)'" onblur="this.style.borderColor='var(--border-color)'">
+                            <textarea name="message" rows="4" placeholder="Your Message" style="width: 100%; padding: 12px 14px; background: var(--bg-color); border: 1px solid var(--border-color); border-radius: 10px; color: var(--heading-color); outline: none; transition: 0.3s; font-size: 13px;" onfocus="this.style.borderColor='var(--secondary-color)'" onblur="this.style.borderColor='var(--border-color)'"></textarea>
                             <button type="submit" class="btn btn-primary" style="width: 100%; padding: 12px; font-size: 14px; font-weight: 800; border-radius: 10px;">
                                 <i class="fas fa-paper-plane" style="margin-right: 6px;"></i> Send
                             </button>

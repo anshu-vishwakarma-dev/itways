@@ -277,4 +277,47 @@ document.addEventListener('DOMContentLoaded', () => {
             }, 300); // Slight delay for smooth visual transition
         });
     }
+
+    // --- 5. AJAX Form Submission Handler ---
+    const allForms = document.querySelectorAll('form.idx-query-form, form.contact-form, form.quote-form, form.callback-form');
+    
+    allForms.forEach(form => {
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const submitBtn = form.querySelector('button[type="submit"]');
+            const originalBtnText = submitBtn.innerHTML;
+            
+            // Set loading state
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin me-2"></i> Sending...';
+            
+            const formData = new FormData(form);
+            
+            fetch(form.action || 'includes/form-handler.php', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.status === 'success') {
+                    // Show success message
+                    alert(data.message); // Replace with a pretty toast if possible
+                    form.reset();
+                } else {
+                    // Show error message
+                    alert('Error: ' + data.message);
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('Something went wrong. Please try again later.');
+            })
+            .finally(() => {
+                // Restore button state
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = originalBtnText;
+            });
+        });
+    });
 });

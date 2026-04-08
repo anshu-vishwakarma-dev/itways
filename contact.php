@@ -159,18 +159,19 @@
         <div style="position: sticky; top: 170px; z-index: 10; margin-bottom: auto;">
             <div class="card cn-form-card" data-tilt data-tilt-max="3" data-tilt-speed="400" data-tilt-glare="true" data-tilt-max-glare="0.05">
                 <h3 class="text-secondary-color mb-30">Send Us a Message</h3>
-                <form class="query-form">
+                <form action="<?php echo $base_url; ?>includes/form-handler.php" method="POST" class="query-form contact-form">
+                    <input type="hidden" name="form_type" value="Contact Page Form">
                     <div class="mb-20">
-                        <input type="text" placeholder="Your Name" class="form-control">
+                        <input type="text" name="name" placeholder="Your Name" class="form-control" required>
                     </div>
                     <div class="mb-20">
-                        <input type="email" placeholder="Your Email" class="form-control">
+                        <input type="email" name="email" placeholder="Your Email" class="form-control" required>
                     </div>
                     <div class="mb-20">
-                        <input type="text" placeholder="Phone Number" class="form-control">
+                        <input type="text" name="phone" placeholder="Phone Number" class="form-control">
                     </div>
                     <div class="mb-20">
-                        <textarea rows="5" placeholder="Your Message" class="form-control"></textarea>
+                        <textarea name="message" rows="5" placeholder="Your Message" class="form-control"></textarea>
                     </div>
                     <button type="submit" class="btn w-100 p-15" style="background: var(--secondary-color); color: #fff; font-weight: 600; border-radius: 6px; border: none; padding: 14px;">Send Message</button>
                 </form>

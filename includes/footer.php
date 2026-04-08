@@ -19,11 +19,13 @@
     </section>
 
     <footer class="section" style="background: var(--primary-color); color: rgba(255,255,255,0.7); padding-top: 80px; padding-bottom: 50px;">
-        <div class="container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px;">
+        <div class="container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px;">
 
             <!-- Column 1: About -->
             <div class="footer-box">
-                <a href="<?php echo $base_url; ?>" class="logo" style="font-size: 28px; font-weight: 800; color: #fff; letter-spacing: 1px;">IT Ways</a>
+                <a href="<?php echo $base_url; ?>" class="logo">
+                    <img src="<?php echo $base_url; ?>assets/logo.png" alt="IT WAYS" style="height: 55px; transition: all 0.3s ease; filter: brightness(0) invert(1);">
+                </a>
                 <p style="margin-top: 20px; line-height: 1.6; color: rgba(255,255,255,0.7);">We offer our clients technology solutions that add real value to their business. It’s simple we understand that our success is measured by the success of our clients.</p>
                 <div class="footer-social-links" style="margin-top: 25px; display: flex; gap: 15px;">
                     <a href="https://facebook.com/itwaysindia" target="_blank" style="width: 40px; height: 40px; border-radius: 50%; background: rgba(255,255,255,0.05); display: flex; align-items: center; justify-content: center; color: #fff; transition: 0.3s; border: 1px solid rgba(255,255,255,0.1);"><i class="fab fa-facebook-f"></i></a>
@@ -34,53 +36,194 @@
                 <p style="margin-top: 25px; font-size: 12px; color: rgba(255,255,255,0.4);">Copyright &copy; 2011 &ndash; <?php echo date('Y'); ?> IT WAYS. All Rights Reserved.</p>
             </div>
 
-            <!-- Column 2: Working Hours -->
+            <!-- Column 2: IT Services -->
             <div class="footer-box">
-                <h3 style="color: #fff; margin-bottom: 25px; font-size: 18px; font-weight: 700;">Working Hours</h3>
-                <ul style="list-style: none; padding: 0;">
-                    <li style="margin-bottom: 15px; color: rgba(255,255,255,0.7);">
-                        <strong style="color: var(--secondary-color); font-size: 14px;">Sales</strong><br>
-                        Mon - Sat 10:00AM to 7:00PM
+                <h3 style="color: #fff; margin-bottom: 20px; font-size: 16px; font-weight: 700; letter-spacing: 0.5px; text-transform: uppercase;"><i class="fas fa-laptop-code" style="color: var(--secondary-color); margin-right: 8px;"></i>IT Services</h3>
+                <ul style="list-style: none; padding: 0; margin: 0;">
+                    <li style="margin-bottom: 10px;">
+                        <a href="<?php echo $base_url; ?>service-details.php?type=software-development" style="color: rgba(255,255,255,0.65); font-size: 13px; text-decoration: none; transition: 0.2s; display: flex; align-items: center; gap: 6px;">
+                            <i class="fas fa-chevron-right" style="font-size: 9px; color: var(--secondary-color);"></i>Custom Software
+                        </a>
                     </li>
-                    <li style="margin-bottom: 15px; color: rgba(255,255,255,0.7);">
-                        <strong style="color: var(--secondary-color); font-size: 14px;">Support</strong><br>
-                        Mon - Fri 10:00AM to 7:00PM
+                    <li style="margin-bottom: 10px;">
+                        <a href="<?php echo $base_url; ?>service-details.php?type=computer-networking" style="color: rgba(255,255,255,0.65); font-size: 13px; text-decoration: none; transition: 0.2s; display: flex; align-items: center; gap: 6px;">
+                            <i class="fas fa-chevron-right" style="font-size: 9px; color: var(--secondary-color);"></i>Network Solutions
+                        </a>
                     </li>
-                    <li style="color: rgba(255,255,255,0.7);">
-                        <strong style="color: var(--secondary-color); font-size: 14px;">Emergency Support</strong><br>
-                        24/7
+                    <li style="margin-bottom: 10px;">
+                        <a href="<?php echo $base_url; ?>service-details.php?type=digital-consulting" style="color: rgba(255,255,255,0.65); font-size: 13px; text-decoration: none; transition: 0.2s; display: flex; align-items: center; gap: 6px;">
+                            <i class="fas fa-chevron-right" style="font-size: 9px; color: var(--secondary-color);"></i>Digital Consulting
+                        </a>
+                    </li>
+                    <li style="margin-bottom: 10px;">
+                        <a href="<?php echo $base_url; ?>service-details.php?type=video-surveillance-solution" style="color: rgba(255,255,255,0.65); font-size: 13px; text-decoration: none; transition: 0.2s; display: flex; align-items: center; gap: 6px;">
+                            <i class="fas fa-chevron-right" style="font-size: 9px; color: var(--secondary-color);"></i>CCTV & Surveillance
+                        </a>
+                    </li>
+                    <li style="margin-bottom: 10px;">
+                        <a href="<?php echo $base_url; ?>service-details.php?type=web-design-development" style="color: rgba(255,255,255,0.65); font-size: 13px; text-decoration: none; transition: 0.2s; display: flex; align-items: center; gap: 6px;">
+                            <i class="fas fa-chevron-right" style="font-size: 9px; color: var(--secondary-color);"></i>Web Development
+                        </a>
                     </li>
                 </ul>
             </div>
 
-            <!-- Column 3: Reach Us -->
+
+            <!-- Column 3: Industries -->
             <div class="footer-box">
-                <h3 style="color: #fff; margin-bottom: 25px; font-size: 18px; font-weight: 700;">Reach us</h3>
-                <ul style="list-style: none; padding: 0;">
-                    <li style="margin-bottom: 12px; display: flex; align-items: center; gap: 12px; color: rgba(255,255,255,0.7);">
-                        <i class="fas fa-envelope" style="color: var(--secondary-color);"></i> sales@itwaysindia.com
+                <h3 style="color: #fff; margin-bottom: 20px; font-size: 16px; font-weight: 700; letter-spacing: 0.5px; text-transform: uppercase;"><i class="fas fa-industry" style="color: var(--secondary-color); margin-right: 8px;"></i>Industries</h3>
+                <ul style="list-style: none; padding: 0; margin: 0;">
+                    <li style="margin-bottom: 10px;">
+                        <a href="#" style="color: rgba(255,255,255,0.65); font-size: 13px; text-decoration: none; transition: 0.2s; display: flex; align-items: center; gap: 6px;">
+                            <i class="fas fa-chevron-right" style="font-size: 9px; color: var(--secondary-color);"></i>Real Estate
+                        </a>
                     </li>
-                    <li style="margin-bottom: 25px; display: flex; align-items: center; gap: 12px; color: rgba(255,255,255,0.7);">
-                        <i class="fas fa-envelope" style="color: var(--secondary-color);"></i> support@itwaysindia.com
+                    <li style="margin-bottom: 10px;">
+                        <a href="#" style="color: rgba(255,255,255,0.65); font-size: 13px; text-decoration: none; transition: 0.2s; display: flex; align-items: center; gap: 6px;">
+                            <i class="fas fa-chevron-right" style="font-size: 9px; color: var(--secondary-color);"></i>Manufacturing
+                        </a>
                     </li>
-                    <li style="margin-bottom: 12px; display: flex; align-items: center; gap: 12px; color: rgba(255,255,255,0.7);">
-                        <i class="fas fa-phone-alt" style="color: var(--secondary-color);"></i> +91 9616 201083
+                    <li style="margin-bottom: 10px;">
+                        <a href="#" style="color: rgba(255,255,255,0.65); font-size: 13px; text-decoration: none; transition: 0.2s; display: flex; align-items: center; gap: 6px;">
+                            <i class="fas fa-chevron-right" style="font-size: 9px; color: var(--secondary-color);"></i>Enterprise Technology
+                        </a>
                     </li>
-                    <li style="display: flex; align-items: center; gap: 12px; color: rgba(255,255,255,0.7);">
-                        <i class="fas fa-phone-alt" style="color: var(--secondary-color);"></i> +91 9919227600
+                    <li style="margin-bottom: 10px;">
+                        <a href="#" style="color: rgba(255,255,255,0.65); font-size: 13px; text-decoration: none; transition: 0.2s; display: flex; align-items: center; gap: 6px;">
+                            <i class="fas fa-chevron-right" style="font-size: 9px; color: var(--secondary-color);"></i>Higher Education
+                        </a>
+                    </li>
+                    <li style="margin-bottom: 10px;">
+                        <a href="#" style="color: rgba(255,255,255,0.65); font-size: 13px; text-decoration: none; transition: 0.2s; display: flex; align-items: center; gap: 6px;">
+                            <i class="fas fa-chevron-right" style="font-size: 9px; color: var(--secondary-color);"></i>Banking
+                        </a>
+                    </li>
+                    <li style="margin-bottom: 10px;">
+                        <a href="#" style="color: rgba(255,255,255,0.65); font-size: 13px; text-decoration: none; transition: 0.2s; display: flex; align-items: center; gap: 6px;">
+                            <i class="fas fa-chevron-right" style="font-size: 9px; color: var(--secondary-color);"></i>Healthcare
+                        </a>
                     </li>
                 </ul>
             </div>
 
-            <!-- Column 4: Contact Form -->
+            <!-- Column 4: Company -->
+            <!-- <div class="footer-box">
+                <h3 style="color: #fff; margin-bottom: 20px; font-size: 16px; font-weight: 700; letter-spacing: 0.5px; text-transform: uppercase;">Company</h3>
+                <ul style="list-style: none; padding: 0; margin: 0;">
+                    <li style="margin-bottom: 10px;">
+                        <a href="<?php echo $base_url; ?>about.php" style="color: rgba(255,255,255,0.65); font-size: 13px; text-decoration: none; transition: 0.2s; display: flex; align-items: center; gap: 6px;">
+                            <i class="fas fa-chevron-right" style="font-size: 9px; color: var(--secondary-color);"></i>About
+                        </a>
+                    </li>
+                    <li style="margin-bottom: 10px;">
+                        <a href="<?php echo $base_url; ?>about.php" style="color: rgba(255,255,255,0.65); font-size: 13px; text-decoration: none; transition: 0.2s; display: flex; align-items: center; gap: 6px;">
+                            <i class="fas fa-chevron-right" style="font-size: 9px; color: var(--secondary-color);"></i>Our Approach
+                        </a>
+                    </li>
+                    <li style="margin-bottom: 10px;">
+                        <a href="<?php echo $base_url; ?>products.php" style="color: rgba(255,255,255,0.65); font-size: 13px; text-decoration: none; transition: 0.2s; display: flex; align-items: center; gap: 6px;">
+                            <i class="fas fa-chevron-right" style="font-size: 9px; color: var(--secondary-color);"></i>Products
+                        </a>
+                    </li>
+                    <li style="margin-bottom: 10px;">
+                        <a href="<?php echo $base_url; ?>contact.php" style="color: rgba(255,255,255,0.65); font-size: 13px; text-decoration: none; transition: 0.2s; display: flex; align-items: center; gap: 6px;">
+                            <i class="fas fa-chevron-right" style="font-size: 9px; color: var(--secondary-color);"></i>Locations
+                        </a>
+                    </li>
+                </ul>
+            </div> -->
+
+            <!-- Column 5: Support -->
+            <!-- <div class="footer-box">
+                <h3 style="color: #fff; margin-bottom: 20px; font-size: 16px; font-weight: 700; letter-spacing: 0.5px; text-transform: uppercase;">Support</h3>
+                <ul style="list-style: none; padding: 0; margin: 0;">
+                    <li style="margin-bottom: 10px;">
+                        <a href="#" style="color: rgba(255,255,255,0.65); font-size: 13px; text-decoration: none; transition: 0.2s; display: flex; align-items: center; gap: 6px;">
+                            <i class="fas fa-chevron-right" style="font-size: 9px; color: var(--secondary-color);"></i>Forum Support
+                        </a>
+                    </li>
+                    <li style="margin-bottom: 10px;">
+                        <a href="#" style="color: rgba(255,255,255,0.65); font-size: 13px; text-decoration: none; transition: 0.2s; display: flex; align-items: center; gap: 6px;">
+                            <i class="fas fa-chevron-right" style="font-size: 9px; color: var(--secondary-color);"></i>Help &amp; FAQ
+                        </a>
+                    </li>
+                    <li style="margin-bottom: 10px;">
+                        <a href="<?php echo $base_url; ?>contact.php" style="color: rgba(255,255,255,0.65); font-size: 13px; text-decoration: none; transition: 0.2s; display: flex; align-items: center; gap: 6px;">
+                            <i class="fas fa-chevron-right" style="font-size: 9px; color: var(--secondary-color);"></i>Contact Us
+                        </a>
+                    </li>
+                    <li style="margin-bottom: 10px;">
+                        <a href="#" style="color: rgba(255,255,255,0.65); font-size: 13px; text-decoration: none; transition: 0.2s; display: flex; align-items: center; gap: 6px;">
+                            <i class="fas fa-chevron-right" style="font-size: 9px; color: var(--secondary-color);"></i>Cookies Policy
+                        </a>
+                    </li>
+                    <li style="margin-bottom: 10px;">
+                        <a href="#" style="color: rgba(255,255,255,0.65); font-size: 13px; text-decoration: none; transition: 0.2s; display: flex; align-items: center; gap: 6px;">
+                            <i class="fas fa-chevron-right" style="font-size: 9px; color: var(--secondary-color);"></i>Privacy Policy
+                        </a>
+                    </li>
+                </ul>
+            </div> -->
+
+            <!-- Column 4: Cities We Serve -->
             <div class="footer-box">
+                <h3 style="color: #fff; margin-bottom: 20px; font-size: 18px; font-weight: 700;"><i class="fas fa-map-marker-alt" style="color: var(--secondary-color); margin-right: 8px;"></i>Cities We Serve</h3>
+                <div style="display: flex; flex-wrap: wrap; gap: 7px;">
+                    <?php
+                    $cities = [
+                        'Delhi NCR',
+                        'Mumbai',
+                        'Bangalore',
+                        'Hyderabad',
+                        'Pune',
+                        'Chennai',
+                        'Kolkata',
+                        'Gurugram',
+                        'Ahmedabad',
+                        'New Delhi',
+                        'Noida',
+                        'Lucknow',
+                        'Jaipur',
+                        'Chandigarh',
+                        'Indore',
+                        'Bhopal',
+                        'Surat',
+                        'Nagpur',
+                        'Patna'
+                    ];
+                    foreach ($cities as $city): ?>
+                        <span style="display: inline-flex; align-items: center; gap: 5px; padding: 4px 10px; background: rgba(14, 165, 233, 0.08); border: 1px solid rgba(14, 165, 233, 0.15); border-radius: 20px; font-size: 11px; font-weight: 600; color: rgba(255,255,255,0.75);">
+                            <i class="fas fa-circle" style="font-size: 4px; color: var(--secondary-color);"></i>
+                            <?php echo $city; ?>
+                        </span>
+                    <?php endforeach; ?>
+                </div>
+            </div>
+
+            <!-- Column 5: Coverage Areas -->
+            <div class="footer-box">
+                <h3 style="color: #fff; margin-bottom: 20px; font-size: 18px; font-weight: 700;"><i class="fas fa-globe" style="color: var(--secondary-color); margin-right: 8px;"></i>Coverage Areas</h3>
+                <ul style="list-style: none; padding: 0; margin: 0;">
+                    <?php
+                    $coverage = ['India', 'USA', 'Canada', 'UK', 'Australia', 'UAE', 'Singapore', 'South Africa'];
+                    foreach ($coverage as $country): ?>
+                        <li style="margin-bottom: 10px; display: flex; align-items: center; gap: 8px; color: rgba(255,255,255,0.75); font-size: 13px; font-weight: 500;">
+                            <i class="fas fa-circle" style="font-size: 4px; color: var(--secondary-color); flex-shrink: 0;"></i>
+                            <?php echo $country; ?>
+                        </li>
+                    <?php endforeach; ?>
+                </ul>
+            </div>
+
+            <!-- Column 6: Contact Form -->
+            <!-- <div class="footer-box">
                 <h3 style="color: #fff; margin-bottom: 25px; font-size: 18px; font-weight: 700;">Get in Touch</h3>
                 <form style="display: flex; flex-direction: column; gap: 12px;">
                     <input type="text" placeholder="Name" style="width: 100%; padding: 14px; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; color: #fff; outline: none; transition: 0.3s;">
                     <input type="email" placeholder="E-Mail" style="width: 100%; padding: 14px; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; color: #fff; outline: none; transition: 0.3s;">
                     <button type="submit" class="btn btn-primary" style="width: 100%; padding: 14px; border-radius: 12px; font-weight: 700;">Send Message</button>
                 </form>
-            </div>
+            </div> -->
         </div>
 
         <!-- Bottom Bar -->
@@ -92,6 +235,7 @@
                 <a href="#" style="color: rgba(255,255,255,0.6); text-decoration: none; transition: 0.3s;">Refund Policy</a>
             </div>
         </div>
+
     </footer>
     <!-- Floating Widgets -->
     <div class="floating-widgets-right">

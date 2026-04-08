@@ -70,30 +70,45 @@ $serviceSeo = [
         'description' => 'Custom software development services from ITWAYS for scalable business systems, ERP, CRM, cloud platforms, and modern enterprise applications.',
         'keywords' => 'custom software development, ERP development, CRM development, enterprise software company'
     ],
-    'hardware-networking' => [
-        'title' => 'Hardware and Networking Services | ITWAYS',
-        'description' => 'ITWAYS provides hardware procurement, setup, maintenance, and networking solutions for secure, reliable business infrastructure.',
-        'keywords' => 'hardware services, computer networking, IT infrastructure setup, network support'
+    'web-application-development' => [
+        'title' => 'Web Application Development Services | ITWAYS',
+        'description' => 'ITWAYS develops powerful mobile and web applications tailored to business workflows, customer engagement, and long-term scalability.',
+        'keywords' => 'application development, mobile app development, business apps, custom app solutions'
     ],
-    'website-development' => [
+    'web-design-development' => [
         'title' => 'Website Development Services | ITWAYS',
         'description' => 'Build responsive, high-performance business websites with ITWAYS website development services focused on speed, design, SEO, and conversions.',
         'keywords' => 'website development company, responsive website design, business website development, SEO friendly website'
     ],
-    'application-development' => [
-        'title' => 'Application Development Services | ITWAYS',
-        'description' => 'ITWAYS develops powerful mobile and web applications tailored to business workflows, customer engagement, and long-term scalability.',
-        'keywords' => 'application development, mobile app development, business apps, custom app solutions'
-    ],
-    'digital-marketing' => [
-        'title' => 'Digital Marketing Services | ITWAYS',
-        'description' => 'Grow your online presence with ITWAYS digital marketing services including SEO strategy, lead generation, content optimization, and campaign support.',
-        'keywords' => 'digital marketing services, online marketing company, lead generation, content marketing'
-    ],
-    'seo-services' => [
+    'seo-solution' => [
         'title' => 'SEO Services | ITWAYS',
         'description' => 'Improve rankings, traffic, and visibility with ITWAYS SEO services including on-page SEO, technical SEO, keyword research, and content optimization.',
         'keywords' => 'SEO services, technical SEO, on-page SEO, keyword research, search engine optimization company'
+    ],
+    'computer-hardware' => [
+        'title' => 'Hardware Services | ITWAYS',
+        'description' => 'ITWAYS provides hardware procurement, setup, maintenance, and expert technical support for reliable business infrastructure.',
+        'keywords' => 'hardware services, computer hardware, IT infrastructure setup, hardware support'
+    ],
+    'computer-networking' => [
+        'title' => 'Networking Services | ITWAYS',
+        'description' => 'ITWAYS provides secure, reliable business networking solutions, setup, and maintenance for enterprise infrastructure.',
+        'keywords' => 'networking services, computer networking, network setup, network support'
+    ],
+    'video-surveillance-solution' => [
+        'title' => 'Video Surveillance Solutions | ITWAYS',
+        'description' => 'Protect your assets with advanced physical security and complex surveillance matrix setups from ITWAYS.',
+        'keywords' => 'video surveillance, CCTV setup, security solutions, surveillance matrix'
+    ],
+    'digital-consulting' => [
+        'title' => 'Digital Consulting & Marketing | ITWAYS',
+        'description' => 'Grow your online presence with ITWAYS digital marketing and consulting services including strategy, lead generation, and campaign support.',
+        'keywords' => 'digital marketing services, online marketing company, lead generation, digital consulting'
+    ],
+    'mobile-app-solutions' => [
+        'title' => 'Mobile App Solutions | ITWAYS',
+        'description' => 'ITWAYS develops powerful native and cross-platform mobile applications tailored to business workflows and customer engagement.',
+        'keywords' => 'mobile app development, iOS app development, Android app development, custom mobile apps'
     ]
 ];
 
@@ -135,14 +150,14 @@ if (isset($pageSeo[$currentPage])) {
 }
 
 if ($currentPage === 'service-details.php') {
-    $serviceSlug = $_GET['service'] ?? '';
+    $serviceSlug = $_GET['type'] ?? '';
     if (isset($serviceSeo[$serviceSlug])) {
         $seo = array_merge($seo, $serviceSeo[$serviceSlug], ['type' => 'article']);
     }
 }
 
 if ($currentPage === 'product-details.php') {
-    $productSlug = $_GET['product'] ?? '';
+    $productSlug = $_GET['type'] ?? '';
     if (isset($productSeo[$productSlug])) {
         $seo = array_merge($seo, $productSeo[$productSlug], ['type' => 'product']);
     }
@@ -236,9 +251,15 @@ $breadcrumbSchema = [
     <link rel="icon" href="<?php echo $base_url; ?>assets/logo.png">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <script type="application/ld+json"><?php echo json_encode($organizationSchema, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE); ?></script>
-    <script type="application/ld+json"><?php echo json_encode($webPageSchema, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE); ?></script>
-    <script type="application/ld+json"><?php echo json_encode($breadcrumbSchema, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE); ?></script>
+    <script type="application/ld+json">
+        <?php echo json_encode($organizationSchema, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE); ?>
+    </script>
+    <script type="application/ld+json">
+        <?php echo json_encode($webPageSchema, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE); ?>
+    </script>
+    <script type="application/ld+json">
+        <?php echo json_encode($breadcrumbSchema, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE); ?>
+    </script>
 </head>
 
 <body>
@@ -326,24 +347,24 @@ $breadcrumbSchema = [
                         <li class="has-dropdown">
                             <a href="<?php echo $base_url; ?>products/" class="<?php echo ($currentPage == 'products.php') ? 'active' : ''; ?>">Products & Solutions <i class="fas fa-caret-down"></i></a>
                             <ul class="dropdown-menu">
-                                <li><a href="<?php echo $base_url; ?>product-details.php?product=real-estate">Real Estate Software</a></li>
-                                <li><a href="<?php echo $base_url; ?>products/#">News Portal Software</a></li>
-                                <li><a href="<?php echo $base_url; ?>products/#">ERP Software</a></li>
-                                <li><a href="<?php echo $base_url; ?>products/#">Restaurant Software</a></li>
-                                <li><a href="<?php echo $base_url; ?>products/#">Hotel Management Software</a></li>
-                                <li><a href="<?php echo $base_url; ?>products/#">Salon Management Software</a></li>
-                                <li><a href="<?php echo $base_url; ?>products/#">Educational Software</a></li>
+                                <li><a href="<?php echo $base_url; ?>product-details.php?type=real-estate-crm">Real Estate Software</a></li>
+                                <li><a href="<?php echo $base_url; ?>products.php#">News Portal Software</a></li>
+                                <li><a href="<?php echo $base_url; ?>products.php#">ERP Software</a></li>
+                                <li><a href="<?php echo $base_url; ?>products.php#">Restaurant Software</a></li>
+                                <li><a href="<?php echo $base_url; ?>products.php#">Hotel Management Software</a></li>
+                                <li><a href="<?php echo $base_url; ?>products.php#">Salon Management Software</a></li>
+                                <li><a href="<?php echo $base_url; ?>products.php#">Educational Software</a></li>
                             </ul>
                         </li>
                         <li class="has-dropdown">
                             <a href="<?php echo $base_url; ?>services/" class="<?php echo ($currentPage == 'services.php') ? 'active' : ''; ?>">Services <i class="fas fa-caret-down"></i></a>
                             <ul class="dropdown-menu">
-                                <li><a href="<?php echo $base_url; ?>service-details.php?service=software-development">Software Development</a></li>
-                                <li><a href="<?php echo $base_url; ?>service-details.php?service=hardware-networking">Hardware & Networking</a></li>
-                                <li><a href="<?php echo $base_url; ?>service-details.php?service=website-development">Website Development</a></li>
-                                <li><a href="<?php echo $base_url; ?>service-details.php?service=application-development">Application Development</a></li>
-                                <li><a href="<?php echo $base_url; ?>service-details.php?service=digital-marketing">Digital Marketing</a></li>
-                                <li><a href="<?php echo $base_url; ?>service-details.php?service=seo-services">SEO Services</a></li>
+                                <li><a href="<?php echo $base_url; ?>service-details.php?type=software-development">Software Development</a></li>
+                                <li><a href="<?php echo $base_url; ?>service-details.php?type=computer-hardware">Hardware & Networking</a></li>
+                                <li><a href="<?php echo $base_url; ?>service-details.php?type=web-design-development">Website Development</a></li>
+                                <li><a href="<?php echo $base_url; ?>service-details.php?type=web-application-development">Application Development</a></li>
+                                <li><a href="<?php echo $base_url; ?>service-details.php?type=digital-consulting">Digital Marketing</a></li>
+                                <li><a href="<?php echo $base_url; ?>service-details.php?type=seo-solution">SEO Services</a></li>
                             </ul>
                         </li>
                         <li><a href="<?php echo $base_url; ?>careers/" class="<?php echo ($currentPage == 'careers.php') ? 'active' : ''; ?>">Careers</a></li>

@@ -3,6 +3,7 @@
 <section class="corporate-sub-hero bg-grid-premium">
     <div class="mesh-bg"></div>
     <div class="hero-aura"></div>
+    <div class="hero-aura-interactive" id="hero-aura"></div>
     <div class="hero-particles">
         <div class="particle p1"></div>
         <div class="particle p3"></div>
@@ -13,120 +14,268 @@
     </div>
     <div class="container" style="position: relative; z-index: 5;">
         <div class="corporate-badge" data-aos="fade-up">
-            <i class="fas fa-box-open"></i> Portfolio
+            <i class="fas fa-box-open"></i> Product Portfolio
         </div>
-        <h1 data-aos="fade-up" data-aos-delay="100">Experience the Future of Real Estate Management with <span style="color: var(--secondary-color);">IT Ways CRM</span></h1>
-        <p data-aos="fade-up" data-aos-delay="200">Are you a seasoned realtor or developer seeking precision, speed, and complete control over your sales journey?</p>
+        <h1 data-aos="fade-up" data-aos-delay="100">Smart Solutions for <span style="color: var(--secondary-color);">Digital Excellence</span></h1>
+        <p data-aos="fade-up" data-aos-delay="200">Empower your business with our suite of premium CRM and Enterprise solutions tailored for growth and precision.</p>
+        <div class="d-flex justify-content-center mt-4" data-aos="fade-up" data-aos-delay="300">
+            <a href="#products-discovery" class="btn btn-primary px-40">Explore Our Products <i class="fas fa-chevron-down ms-2"></i></a>
+        </div>
     </div>
 </section>
 
-<section class="section bg-light-bg">
-    <div class="container" data-aos="fade-up">
-        <div class="card pc-product-card" data-tilt data-tilt-max="3" data-tilt-speed="400" data-tilt-glare="true" data-tilt-max-glare="0.05">
-            <div>
-                <img src="<?php echo $base_url; ?>assets/image.png" alt="Real Estate CRM Pro by ITWAYS" class="pc-product-image img-fluid" loading="lazy">
+<section class="section bg-light-bg" id="products-discovery">
+    <div class="container">
+        <!-- Filter Tabs -->
+        <div class="product-filter-container" data-aos="fade-up">
+            <button class="filter-btn active" data-filter="all">All Solutions</button>
+            <button class="filter-btn" data-filter="real-estate">Real Estate CRM</button>
+            <button class="filter-btn" data-filter="enterprise">Enterprise ERP</button>
+            <button class="filter-btn" data-filter="industry">Industry Specific</button>
+        </div>
+
+        <div class="products-grid" id="products-grid">
+            <!-- Real Estate CRM Pro -->
+            <div class="product-item" data-category="real-estate" data-aos="fade-up">
+                <div class="glow-card-wrapper" data-tilt data-tilt-max="5" data-tilt-glare="true" data-tilt-max-glare="0.1">
+                    <div class="glow-card-bg"></div>
+                    <div class="glow-card-content">
+                        <div class="product-img-container">
+                            <img src="<?php echo $base_url; ?>assets/image.png" alt="Real Estate CRM Pro" loading="lazy">
+                        </div>
+                        <h3 class="mb-2">Real Estate CRM Pro</h3>
+                        <p class="paragraph fs-14 mb-3">Complete lead management & property tracking for large scale developers.</p>
+                        <div class="feature-chips">
+                            <span class="chip">Lead Tracking</span>
+                            <span class="chip">Inventory</span>
+                            <span class="chip">Automation</span>
+                        </div>
+                        <div class="product-card-actions">
+                            <a href="<?php echo $base_url; ?>product-details.php?type=real-estate-crm" class="card-btn card-btn-primary">Details</a>
+                            <a href="<?php echo $base_url; ?>contact.php" class="card-btn card-btn-outline">Quote</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div>
-                <h2 class="text-secondary-color">Real Estate CRM Pro</h2>
-                <h3 class="mb-4">Streamline Your Property Business</h3>
-                <p class="paragraph">A comprehensive CRM solution designed specifically for real estate developers and agents. Track leads, manage properties, and automate follow-ups with ease.</p>
-                <ul class="pc-product-features-list">
-                    <li>Lead Management & Tracking</li>
-                    <li>Property Inventory Management</li>
-                    <li>Automated SMS & Email Follow-ups</li>
-                    <li>Sales Performance Analytics</li>
-                </ul>
-                <div class="pc-product-price">₹14,000.00</div>
-                <div class="d-flex-align-center-gap-20-wrap">
-                    <a href="<?php echo $base_url; ?>product-details.php?type=real-estate-crm" class="btn btn-primary px-30 fw-800"><i class="fas fa-eye me-1"></i> View Details</a>
-                    <a href="<?php echo $base_url; ?>contact.php" class="btn btn-outline px-30 fw-800">Purchase Now</a>
+
+            <!-- Agent CRM -->
+            <div class="product-item" data-category="real-estate" data-aos="fade-up" data-aos-delay="100">
+                <div class="glow-card-wrapper" data-tilt data-tilt-max="5" data-tilt-glare="true" data-tilt-max-glare="0.1">
+                    <div class="glow-card-bg"></div>
+                    <div class="glow-card-content">
+                        <div class="product-img-container">
+                            <img src="<?php echo $base_url; ?>assets/agent.png" alt="Agent CRM" loading="lazy">
+                        </div>
+                        <h3 class="mb-2">Agent CRM Software</h3>
+                        <p class="paragraph fs-14 mb-3">Save hours every week by automating follow-ups and property scheduling.</p>
+                        <div class="feature-chips">
+                            <span class="chip">Mobile Ready</span>
+                            <span class="chip">SMS Alerts</span>
+                            <span class="chip">Quick Follow-up</span>
+                        </div>
+                        <div class="product-card-actions">
+                            <a href="<?php echo $base_url; ?>product-details.php?type=agent-crm" class="card-btn card-btn-primary">Details</a>
+                            <a href="<?php echo $base_url; ?>contact.php" class="card-btn card-btn-outline">Quote</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Developer CRM -->
+            <div class="product-item" data-category="real-estate" data-aos="fade-up" data-aos-delay="200">
+                <div class="glow-card-wrapper" data-tilt data-tilt-max="5" data-tilt-glare="true" data-tilt-max-glare="0.1">
+                    <div class="glow-card-bg"></div>
+                    <div class="glow-card-content">
+                        <div class="product-img-container">
+                            <img src="<?php echo $base_url; ?>assets/developer.png" alt="Developer CRM" loading="lazy">
+                        </div>
+                        <h3 class="mb-2">Developer CRM</h3>
+                        <p class="paragraph fs-14 mb-3">Central dashboard for multiple projects, site visits, and inventory monitoring.</p>
+                        <div class="feature-chips">
+                            <span class="chip">Multi-Project</span>
+                            <span class="chip">Analytics</span>
+                            <span class="chip">Site Visits</span>
+                        </div>
+                        <div class="product-card-actions">
+                            <a href="<?php echo $base_url; ?>product-details.php?type=developer-crm" class="card-btn card-btn-primary">Details</a>
+                            <a href="<?php echo $base_url; ?>contact.php" class="card-btn card-btn-outline">Quote</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Builder CRM -->
+            <div class="product-item" data-category="real-estate" data-aos="fade-up">
+                <div class="glow-card-wrapper" data-tilt data-tilt-max="5" data-tilt-glare="true" data-tilt-max-glare="0.1">
+                    <div class="glow-card-bg"></div>
+                    <div class="glow-card-content">
+                        <div class="product-img-container">
+                            <img src="<?php echo $base_url; ?>assets/builder.png" alt="Builder CRM" loading="lazy">
+                        </div>
+                        <h3 class="mb-2">Builder CRM</h3>
+                        <p class="paragraph fs-14 mb-3">Construction to convenience. Control project execution and buyer interactions.</p>
+                        <div class="feature-chips">
+                            <span class="chip">Workflow</span>
+                            <span class="chip">Billing</span>
+                            <span class="chip">Compliance</span>
+                        </div>
+                        <div class="product-card-actions">
+                            <a href="<?php echo $base_url; ?>product-details.php?type=builder-crm" class="card-btn card-btn-primary">Details</a>
+                            <a href="<?php echo $base_url; ?>contact.php" class="card-btn card-btn-outline">Quote</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- News Portal ERP -->
+            <div class="product-item" data-category="enterprise" data-aos="fade-up" data-aos-delay="100">
+                <div class="glow-card-wrapper" data-tilt data-tilt-max="5" data-tilt-glare="true" data-tilt-max-glare="0.1">
+                    <div class="glow-card-bg"></div>
+                    <div class="glow-card-content">
+                        <div class="product-img-container">
+                            <i class="fas fa-newspaper fa-5x text-secondary-color opacity-20"></i>
+                        </div>
+                        <h3 class="mb-2">News Portal Software</h3>
+                        <p class="paragraph fs-14 mb-3">Modern CMS for high-traffic news portals with SEO optimization and ads integration.</p>
+                        <div class="feature-chips">
+                            <span class="chip">SEO Ready</span>
+                            <span class="chip">Ads Manager</span>
+                            <span class="chip">Real-time</span>
+                        </div>
+                        <div class="product-card-actions">
+                            <a href="<?php echo $base_url; ?>contact.php" class="card-btn card-btn-primary">Enquire</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ERP Solutions -->
+            <div class="product-item" data-category="enterprise" data-aos="fade-up" data-aos-delay="200">
+                <div class="glow-card-wrapper" data-tilt data-tilt-max="5" data-tilt-glare="true" data-tilt-max-glare="0.1">
+                    <div class="glow-card-bg"></div>
+                    <div class="glow-card-content">
+                        <div class="product-img-container">
+                            <i class="fas fa-chart-line fa-5x text-secondary-color opacity-20"></i>
+                        </div>
+                        <h3 class="mb-2">Custom ERP Software</h3>
+                        <p class="paragraph fs-14 mb-3">Enterprise Resource Planning software tailored to your unique business workflows.</p>
+                        <div class="feature-chips">
+                            <span class="chip">HRMS</span>
+                            <span class="chip">Payroll</span>
+                            <span class="chip">Accounting</span>
+                        </div>
+                        <div class="product-card-actions">
+                            <a href="<?php echo $base_url; ?>contact.php" class="card-btn card-btn-primary">Consult Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Industry Specific: Restaurant -->
+            <div class="product-item" data-category="industry" data-aos="fade-up">
+                <div class="glow-card-wrapper" data-tilt data-tilt-max="5" data-tilt-glare="true" data-tilt-max-glare="0.1">
+                    <div class="glow-card-bg"></div>
+                    <div class="glow-card-content">
+                        <div class="product-img-container">
+                            <i class="fas fa-utensils fa-5x text-secondary-color opacity-20"></i>
+                        </div>
+                        <h3 class="mb-2">Restaurant POS</h3>
+                        <p class="paragraph fs-14 mb-3">Manage orders, billing, inventory, and kitchen workflows from one screen.</p>
+                        <div class="feature-chips">
+                            <span class="chip">Billing</span>
+                            <span class="chip">Inventory</span>
+                            <span class="chip">KOT</span>
+                        </div>
+                        <div class="product-card-actions">
+                            <a href="<?php echo $base_url; ?>contact.php" class="card-btn card-btn-primary">Book Demo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Industry Specific: Education -->
+            <div class="product-item" data-category="industry" data-aos="fade-up" data-aos-delay="100">
+                <div class="glow-card-wrapper" data-tilt data-tilt-max="5" data-tilt-glare="true" data-tilt-max-glare="0.1">
+                    <div class="glow-card-bg"></div>
+                    <div class="glow-card-content">
+                        <div class="product-img-container">
+                            <i class="fas fa-school fa-5x text-secondary-color opacity-20"></i>
+                        </div>
+                        <h3 class="mb-2">Educational ERP</h3>
+                        <p class="paragraph fs-14 mb-3">Complete campus management solution for schools, colleges and coaching centers.</p>
+                        <div class="feature-chips">
+                            <span class="chip">Students</span>
+                            <span class="chip">Fees</span>
+                            <span class="chip">Exams</span>
+                        </div>
+                        <div class="product-card-actions">
+                            <a href="<?php echo $base_url; ?>contact.php" class="card-btn card-btn-primary">Book Demo</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // 1. Mouse Tracking Hero Aura
+        const hero = document.querySelector('.corporate-sub-hero');
+        const aura = document.getElementById('hero-aura');
 
-<section class="section bg-light-bg">
-    <div class="container" data-aos="fade-up">
-        <div class="card pc-product-card" data-tilt data-tilt-max="3" data-tilt-speed="400" data-tilt-glare="true" data-tilt-max-glare="0.05">
-            <div>
-                <img src="<?php echo $base_url; ?>assets/agent.png" alt="Agent CRM Software by ITWAYS" class="pc-product-image" loading="lazy">
-            </div>
-            <div>
-                <h2 class="text-secondary-color">Agent CRM Software</h2>
-                <!-- <h3 class="mb-4">Sell Smarter, Faster & Better</h3> -->
-                <p class="paragraph">As an agent, time is your biggest asset. Our Agent CRM saves hours every week by automating lead follow-ups, client interactions, and property scheduling. Track every lead from interest to closure—all from your phone or desktop. Impress clients with prompt responses and never miss a sales opportunity again. Built specifically for agents who want to sell smarter, faster, and better.</p>
-                <!-- <ul class="pc-product-features-list">
-                    <li>Lead Management & Tracking</li>
-                    <li>Property Inventory Management</li>
-                    <li>Automated SMS & Email Follow-ups</li>
-                    <li>Sales Performance Analytics</li>
-                </ul> -->
-                <!-- <div class="pc-product-price">₹14,000.00</div> -->
-                <div class="d-flex-align-center-gap-20-wrap">
-                    <a href="<?php echo $base_url; ?>product-details.php?type=agent-crm" class="btn btn-primary px-30 fw-800"><i class="fas fa-eye me-1"></i> View Details</a>
-                    <!-- <a href="<?php echo $base_url; ?>contact.php" class="btn btn-outline px-30 fw-800">Purchase Now</a> -->
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+        hero.addEventListener('mousemove', function(e) {
+            const rect = hero.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
 
+            aura.style.transform = `translate(${x - 300}px, ${y - 300}px)`;
+        });
 
+        // 2. Product Filtering Logic
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const productItems = document.querySelectorAll('.product-item');
 
-<section class="section bg-light-bg">
-    <div class="container" data-aos="fade-up">
-        <div class="card pc-product-card" data-tilt data-tilt-max="3" data-tilt-speed="400" data-tilt-glare="true" data-tilt-max-glare="0.05">
-            <div>
-                <img src="<?php echo $base_url; ?>assets/developer.png" alt="Developer CRM Software by ITWAYS" class="pc-product-image" loading="lazy">
-            </div>
-            <div>
-                <h2 class="text-secondary-color">Developer CRM Software</h2>
-                <!-- <h3 class="mb-4">Streamline Your Property Business</h3> -->
-                <p class="paragraph">Managing multiple projects and buyers can be chaotic. Our Developer CRM brings everything under one dashboard. Track sales, monitor site visits, manage inventories, and automate buyer communication—all with real-time visibility. Whether you’re launching a new tower or managing handovers, this CRM simplifies every step. It’s not just software—it’s your project manager, sales assistant, and reporting tool rolled into one.</p>
-                <!-- <ul class="pc-product-features-list">
-                    <li>Lead Management & Tracking</li>
-                    <li>Property Inventory Management</li>
-                    <li>Automated SMS & Email Follow-ups</li>
-                    <li>Sales Performance Analytics</li>
-                </ul> -->
-                <!-- <div class="pc-product-price">₹14,000.00</div> -->
-                <div class="d-flex-align-center-gap-20-wrap">
-                    <a href="<?php echo $base_url; ?>product-details.php?type=developer-crm" class="btn btn-primary px-30 fw-800"><i class="fas fa-eye me-1"></i> View Details</a>
-                    <!-- <a href="<?php echo $base_url; ?>contact.php" class="btn btn-outline px-30 fw-800">Purchase Now</a> -->
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Update active button
+                filterBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
 
+                const filterValue = btn.getAttribute('data-filter');
 
+                productItems.forEach(item => {
+                    if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
+                        item.classList.remove('hidden');
+                        setTimeout(() => {
+                            item.style.opacity = '1';
+                            item.style.transform = 'scale(1)';
+                        }, 50);
+                    } else {
+                        item.style.opacity = '0';
+                        item.style.transform = 'scale(0.9)';
+                        setTimeout(() => {
+                            item.classList.add('hidden');
+                        }, 400);
+                    }
+                });
+            });
+        });
 
-<section class="section bg-light-bg">
-    <div class="container" data-aos="fade-up">
-        <div class="card pc-product-card" data-tilt data-tilt-max="3" data-tilt-speed="400" data-tilt-glare="true" data-tilt-max-glare="0.05">
-            <div>
-                <img src="<?php echo $base_url; ?>assets/builder.png" alt="Builder CRM Software by ITWAYS" class="pc-product-image" loading="lazy">
-            </div>
-            <div>
-                <h2 class="text-secondary-color">Builder CRM Software</h2>
-                <!-- <h3 class="mb-4">Streamline Your Property Business</h3> -->
-                <p class="paragraph">Construction meets convenience. Our Builder CRM is designed for builders who want complete control over project execution, buyer interactions, and workflow management. From lead nurturing and documentation to construction updates and post-sale service—it handles it all. Reduce delays, improve communication, and deliver better customer experiences. Build trust, build faster, build smarter—with our all-in-one Builder CRM.</p>
-                <!-- <ul class="pc-product-features-list">
-                    <li>Lead Management & Tracking</li>
-                    <li>Property Inventory Management</li>
-                    <li>Automated SMS & Email Follow-ups</li>
-                    <li>Sales Performance Analytics</li>
-                </ul> -->
-                <!-- <div class="pc-product-price">₹14,000.00</div> -->
-                <div class="d-flex-align-center-gap-20-wrap">
-                    <a href="<?php echo $base_url; ?>product-details.php?type=builder-crm" class="btn btn-primary px-30 fw-800"><i class="fas fa-eye me-1"></i> View Details</a>
-                    <!-- <a href="<?php echo $base_url; ?>contact.php" class="btn btn-outline px-30 fw-800">Purchase Now</a> -->
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+        // 3. Cursor Glow Effect for Cards
+        const cards = document.querySelectorAll('.glow-card-wrapper');
+
+        cards.forEach(card => {
+            card.addEventListener('mousemove', e => {
+                const rect = card.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+
+                card.style.setProperty('--mouse-x', `${x}px`);
+                card.style.setProperty('--mouse-y', `${y}px`);
+            });
+        });
+    });
+</script>
 
 <?php include 'includes/footer.php'; ?>

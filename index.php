@@ -110,31 +110,31 @@
         <h4 class="text-center text-secondary-color">Our Range of Services</h4>
         <h3 class="text-center mb-60">Solutions for Every Need</h3>
         <div class="bento-grid">
-            <div class="card service-card bento-card-wide idx-bento-wide idx-bento-wide-1" data-tilt data-tilt-max="5" data-tilt-speed="400" data-tilt-glare="true" data-tilt-max-glare="0.1">
+            <a href="<?php echo $base_url; ?>service-details.php?type=software-development" class="card service-card bento-card-wide idx-bento-wide idx-bento-wide-1" data-tilt data-tilt-max="5" data-tilt-speed="400" data-tilt-glare="true" data-tilt-max-glare="0.1">
                 <div class="icon-box icon-box-mb-25"><i class="fas fa-laptop-code"></i></div>
                 <h4 class="fs-28">Custom Software Development</h4>
                 <p class="fs-16 mt-10">Tailored software solutions designed to meet your unique business requirements and challenges. We engineer precise logic matching your exact scale requirements.</p>
-            </div>
-            <div class="card service-card" data-aos="fade-up" data-tilt data-tilt-max="5" data-tilt-speed="400" data-tilt-glare="true" data-tilt-max-glare="0.1">
+            </a>
+            <a href="<?php echo $base_url; ?>service-details.php?type=web-application-development" class="card service-card" data-aos="fade-up" data-tilt data-tilt-max="5" data-tilt-speed="400" data-tilt-glare="true" data-tilt-max-glare="0.1">
                 <div class="icon-box icon-box-mb-25"><i class="fas fa-globe"></i></div>
                 <h4>Web Application Development</h4>
                 <p>Highly interactive and scalable web applications built with modern frameworks and cutting-edge tech.</p>
-            </div>
-            <div class="card service-card" data-aos="fade-up" data-tilt data-tilt-max="5" data-tilt-speed="400" data-tilt-glare="true" data-tilt-max-glare="0.1">
+            </a>
+            <a href="<?php echo $base_url; ?>service-details.php?type=seo-solution" class="card service-card" data-aos="fade-up" data-tilt data-tilt-max="5" data-tilt-speed="400" data-tilt-glare="true" data-tilt-max-glare="0.1">
                 <div class="icon-box icon-box-mb-25"><i class="fas fa-magnifying-glass-chart"></i></div>
                 <h4>SEO Development</h4>
                 <p>Strategic organic search engine optimization tracking to radically boost your active online visibility globally.</p>
-            </div>
-            <div class="card service-card bento-card-wide idx-bento-wide idx-bento-wide-2" data-aos="fade-up" data-tilt data-tilt-max="5" data-tilt-speed="400" data-tilt-glare="true" data-tilt-max-glare="0.1">
+            </a>
+            <a href="<?php echo $base_url; ?>service-details.php?type=computer-hardware" class="card service-card bento-card-wide idx-bento-wide idx-bento-wide-2" data-aos="fade-up" data-tilt data-tilt-max="5" data-tilt-speed="400" data-tilt-glare="true" data-tilt-max-glare="0.1">
                 <div class="icon-box icon-box-mb-25"><i class="fas fa-server"></i></div>
                 <h4 class="fs-28">IT Infrastructure</h4>
                 <p class="fs-16 mt-10">Robust and ultra-secure IT infrastructure hosting solutions, handling hardware arrays entirely to vast encrypted network management solutions for modern enterprise.</p>
-            </div>
-            <div class="card service-card" data-aos="fade-up" data-tilt data-tilt-max="5" data-tilt-speed="400" data-tilt-glare="true" data-tilt-max-glare="0.1">
+            </a>
+            <a href="<?php echo $base_url; ?>service-details.php?type=video-surveillance-solution" class="card service-card" data-aos="fade-up" data-tilt data-tilt-max="5" data-tilt-speed="400" data-tilt-glare="true" data-tilt-max-glare="0.1">
                 <div class="icon-box icon-box-mb-25"><i class="fas fa-video"></i></div>
                 <h4>Video Surveillance</h4>
                 <p>Advanced real-time physical security and complex surveillance matrix setups for monitoring assets securely.</p>
-            </div>
+            </a>
             <div class="card service-card" data-aos="fade-up" data-tilt data-tilt-max="5" data-tilt-speed="400" data-tilt-glare="true" data-tilt-max-glare="0.1">
                 <div class="icon-box icon-box-mb-25"><i class="fas fa-comment-sms"></i></div>
                 <h4>Bulk SMS Services</h4>
@@ -274,18 +274,19 @@
                 </div>
             </div>
         </div>
-        <form class="query-form idx-query-form" data-aos="fade-left">
+        <form action="<?php echo $base_url; ?>includes/form-handler.php" method="POST" class="query-form idx-query-form" data-aos="fade-left">
+            <input type="hidden" name="form_type" value="Index Query Form">
             <div class="mb-20">
-                <input type="text" placeholder="Your Name" class="form-control">
+                <input type="text" name="name" placeholder="Your Name" class="form-control" required>
             </div>
             <div class="mb-20">
-                <input type="email" placeholder="Your Email" class="form-control">
+                <input type="email" name="email" placeholder="Your Email" class="form-control" required>
             </div>
             <div class="mb-20">
-                <input type="text" placeholder="Subject" class="form-control">
+                <input type="text" name="subject" placeholder="Subject" class="form-control">
             </div>
             <div class="mb-20">
-                <textarea rows="4" placeholder="Your Message" class="form-control"></textarea>
+                <textarea name="message" rows="4" placeholder="Your Message" class="form-control"></textarea>
             </div>
             <button type="submit" class="btn btn-primary w-100 p-15">Submit Query</button>
         </form>
