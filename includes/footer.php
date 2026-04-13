@@ -11,7 +11,7 @@
             <h3 style="color: #fff; font-size: clamp(1.0rem, 6vw, 1.5rem); font-weight: 800;">Ready to Elevate Your Business?</h3>
             <p style="font-size: 1.2rem; max-width: 700px; margin: 0 auto 40px; color: rgba(255,255,255,0.9); line-height: 1.8;">Join hands with ITways to unlock innovative tech solutions, robust software development, and unparalleled IT support tailored to your success.</p>
 
-            <a href="<?php echo $base_url; ?>contact.php" class="cta-animated-btn">
+            <a href="<?php echo $base_url; ?>contact/" class="cta-animated-btn">
                 <span>Start Your Project</span>
                 <i class="fas fa-arrow-right"></i>
             </a>
@@ -24,7 +24,7 @@
             <!-- Column 1: About -->
             <div class="footer-box">
                 <a href="<?php echo $base_url; ?>" class="logo">
-                    <img src="<?php echo $base_url; ?>assets/logo.png" alt="IT WAYS" style="height: 55px; transition: all 0.3s ease; filter: brightness(0) invert(1);">
+                    <img src="<?php echo $base_url; ?>assets/logo.png" alt="IT WAYS" style="height: 55px; transition: all 0.3s ease;">
                 </a>
                 <p style="margin-top: 20px; line-height: 1.6; color: rgba(255,255,255,0.7);">We offer our clients technology solutions that add real value to their business. It’s simple we understand that our success is measured by the success of our clients.</p>
                 <div class="footer-social-links" style="margin-top: 25px; display: flex; gap: 15px;">

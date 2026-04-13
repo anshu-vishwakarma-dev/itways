@@ -1,17 +1,7 @@
 <?php include 'includes/header.php'; ?>
 
 <section class="corporate-sub-hero bg-grid-premium">
-    <div class="mesh-bg"></div>
-    <div class="hero-aura"></div>
-    <div class="hero-aura-interactive" id="hero-aura"></div>
-    <div class="hero-particles">
-        <div class="particle p1"></div>
-        <div class="particle p3"></div>
-        <div class="particle p6"></div>
-        <div class="particle p9"></div>
-        <div class="particle p12"></div>
-        <div class="particle p15"></div>
-    </div>
+    <canvas id="heroCanvas" class="hero-canvas"></canvas>
     <div class="container" style="position: relative; z-index: 5;">
         <div class="corporate-badge" data-aos="fade-up">
             <i class="fas fa-box-open"></i> Product Portfolio
@@ -220,17 +210,7 @@
 
 <script>
     document.addEventListener('DOMContentLoaded', function() {
-        // 1. Mouse Tracking Hero Aura
-        const hero = document.querySelector('.corporate-sub-hero');
-        const aura = document.getElementById('hero-aura');
-
-        hero.addEventListener('mousemove', function(e) {
-            const rect = hero.getBoundingClientRect();
-            const x = e.clientX - rect.left;
-            const y = e.clientY - rect.top;
-
-            aura.style.transform = `translate(${x - 300}px, ${y - 300}px)`;
-        });
+        // 1. Mouse Tracking Hero Aura (Removed because we use canvas now)
 
         // 2. Product Filtering Logic
         const filterBtns = document.querySelectorAll('.filter-btn');

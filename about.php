@@ -1,17 +1,7 @@
 <?php include 'includes/header.php'; ?>
 
 <section class="corporate-sub-hero bg-grid-premium">
-    <div class="mesh-bg"></div>
-    <div class="hero-aura"></div>
-    <div class="hero-particles">
-        <div class="particle p1"></div>
-        <!-- <div class="particle p2"></div> -->
-        <div class="particle p3"></div>
-        <div class="particle p5"></div>
-        <div class="particle p7"></div>
-        <div class="particle p13"></div>
-        <div class="particle p15"></div>
-    </div>
+    <canvas id="heroCanvas" class="hero-canvas"></canvas>
     <div class="container" style="position: relative; z-index: 5;">
         <div class="corporate-badge" data-aos="fade-up">
             <i class="fas fa-info-circle"></i> Our Identity

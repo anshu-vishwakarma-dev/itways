@@ -1,4 +1,4 @@
-<?php include 'includes/header.php'; 
+<?php include 'includes/header.php';
 
 // Product Data mapping
 $products_data = [
@@ -14,7 +14,7 @@ $products_data = [
         'price_old' => '₹15,000.00',
         'price_new' => '₹14,000.00',
         'discount' => '7% OFF',
-        'quick_features' => ['Self Hosted', '5 User Panels', '1 Year Hosting', 'PHP Based'],
+        'quick_features' => ['Self Hosted', '5 User Panels', '1 Year Hosting'],
         'tags' => ['Agent Management', 'CRM', 'Lead Management', 'Property Listing', 'Real Estate', 'Real Estate CRM'],
         'description_title' => 'Empower your Real Estate Business with Real Estate CRM Pro.',
         'description_paragraphs' => [
@@ -22,10 +22,18 @@ $products_data = [
             "Real Estate CRM Pro is a tool used to handle Leads with auto-assign Lead functionality. You can create Clients, Agents, Employee and Admin. It has a wallet system and a payment gateway integrated. It's fully dynamic and easy to integrate with existing systems. We provide this web application with secure hosting for 1 year excluding source code. This project is developed in PHP language."
         ],
         'slider_images' => [
-            'assets/slider/slider1.png', 'assets/slider/slider2.png', 'assets/slider/slider3.png',
-            'assets/slider/slider4.png', 'assets/slider/slider5.png', 'assets/slider/slider6.png',
-            'assets/slider/slider7.png', 'assets/slider/slider8.png', 'assets/slider/slider9.png',
-            'assets/slider/slider0.png', 'assets/slider/00.png', 'assets/slider/11.png'
+            'assets/slider/slider1.png',
+            'assets/slider/slider2.png',
+            'assets/slider/slider3.png',
+            'assets/slider/slider4.png',
+            'assets/slider/slider5.png',
+            'assets/slider/slider6.png',
+            'assets/slider/slider7.png',
+            'assets/slider/slider8.png',
+            'assets/slider/slider9.png',
+            'assets/slider/slider0.png',
+            'assets/slider/00.png',
+            'assets/slider/11.png'
         ],
         'panels' => [
             ['title' => 'Super Admin Panel', 'icon' => 'fas fa-shield-alt', 'span' => 1],
@@ -68,7 +76,9 @@ $products_data = [
             "Impress clients with prompt responses and never miss a sales opportunity again. Built specifically for agents who want to sell smarter, faster, and better."
         ],
         'slider_images' => [
-            'assets/slider/slider1.png', 'assets/slider/slider2.png', 'assets/slider/slider3.png'
+            'assets/slider/slider1.png',
+            'assets/slider/slider2.png',
+            'assets/slider/slider3.png'
         ],
         'panels' => [
             ['title' => 'Agent Panel', 'icon' => 'fas fa-handshake', 'span' => 2]
@@ -101,7 +111,9 @@ $products_data = [
             "Whether you’re launching a new tower or managing handovers, this CRM simplifies every step. It’s not just software—it’s your project manager, sales assistant, and reporting tool rolled into one."
         ],
         'slider_images' => [
-            'assets/slider/slider4.png', 'assets/slider/slider5.png', 'assets/slider/slider6.png'
+            'assets/slider/slider4.png',
+            'assets/slider/slider5.png',
+            'assets/slider/slider6.png'
         ],
         'panels' => [
             ['title' => 'Super Admin Panel', 'icon' => 'fas fa-shield-alt', 'span' => 1],
@@ -135,7 +147,9 @@ $products_data = [
             "Reduce delays, improve communication, and deliver better customer experiences. Build trust, build faster, build smarter—with our all-in-one Builder CRM."
         ],
         'slider_images' => [
-            'assets/slider/slider7.png', 'assets/slider/slider8.png', 'assets/slider/slider9.png'
+            'assets/slider/slider7.png',
+            'assets/slider/slider8.png',
+            'assets/slider/slider9.png'
         ],
         'panels' => [
             ['title' => 'Super Admin Panel', 'icon' => 'fas fa-shield-alt', 'span' => 1],
@@ -178,19 +192,12 @@ $productSchema = [
     ]
 ];
 ?>
-<script type="application/ld+json"><?php echo json_encode($productSchema, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE); ?></script>
+<script type="application/ld+json">
+    <?php echo json_encode($productSchema, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE); ?>
+</script>
 
 <section class="corporate-sub-hero bg-grid-premium">
-    <div class="mesh-bg"></div>
-    <div class="hero-aura"></div>
-    <div class="hero-particles">
-        <div class="particle p1"></div>
-        <div class="particle p3"></div>
-        <div class="particle p6"></div>
-        <div class="particle p9"></div>
-        <div class="particle p12"></div>
-        <div class="particle p15"></div>
-    </div>
+    <canvas id="heroCanvas" class="hero-canvas"></canvas>
     <div class="container" style="position: relative; z-index: 5;">
         <!-- Breadcrumb -->
         <nav style="display: inline-flex; align-items: center; gap: 8px; padding: 8px 20px; background: rgba(14, 165, 233, 0.1); border: 1px solid rgba(14, 165, 233, 0.15); border-radius: 50px; color: var(--text-color); font-size: 13px; font-weight: 600; margin-bottom: 30px; backdrop-filter: blur(10px);">
@@ -253,7 +260,7 @@ $productSchema = [
                     <span style="font-size: 13px; font-weight: 700; color: var(--heading-color); margin-right: 10px;">Tags:</span>
                     <div style="display: inline-flex; flex-wrap: wrap; gap: 8px;">
                         <?php foreach ($product['tags'] as $tag): ?>
-                            <a href="#" style="padding: 4px 12px; background: var(--light-bg); border: 1px solid var(--border-color); border-radius: 6px; font-size: 11px; font-weight: 600; color: var(--text-color); text-decoration: none;"><?php echo $tag; ?></a>
+                            <a href="#" style="padding: 4px 12px; background: var(--light-bg); border: 1px solid var(--border-color); border-radius: 6px; font-size: 11px; font-weight: 600; color: var(--text-color); text-decoration: none; transition: all 0.3s ease;" onmouseover="this.style.background='var(--secondary-color)'; this.style.color='#ffffff'; this.style.transform='scale(1.05)';" onmouseout="this.style.background='var(--light-bg)'; this.style.color='var(--text-color)'; this.style.transform='scale(1)';"><?php echo $tag; ?></a>
                         <?php endforeach; ?>
                     </div>
                 </div>
@@ -275,10 +282,10 @@ $productSchema = [
                     <h3 style="font-size: 24px; font-weight: 900; letter-spacing: -0.02em; color: var(--heading-color); margin-bottom: 25px;"><?php echo $product['description_title']; ?></h3>
 
                     <?php foreach ($product['description_paragraphs'] as $para): ?>
-                    <p style="font-size: 15px; line-height: 1.9; color: var(--text-color); margin-bottom: 20px;"><?php echo $para; ?></p>
+                        <p style="font-size: 15px; line-height: 1.9; color: var(--text-color); margin-bottom: 20px;"><?php echo $para; ?></p>
                     <?php endforeach; ?>
 
-                    <div style="background: var(--light-bg); padding: 25px; border-radius: 16px; border: 1px solid var(--border-color);">
+                    <div style="background: var(--light-bg); padding: 25px; border-radius: 16px; border: 1px solid var(--border-color);" data-tilt data-tilt-max="3" data-tilt-glare="true" data-tilt-max-glare="0.1">
                         <h4 style="color: var(--heading-color); margin-bottom: 12px; font-size: 17px;"><i class="fas fa-cogs" style="color: var(--secondary-color); margin-right: 10px;"></i>We can customize according to your requirement</h4>
                         <p style="font-size: 14px; color: var(--text-color); margin: 0;">Our team can tailor the CRM to fit your specific business needs.</p>
                     </div>
@@ -290,9 +297,9 @@ $productSchema = [
                     <div class="swiper product-screenshots-swiper" style="width: 100%; height: 100%; border-radius: 12px; overflow: hidden; position: relative;">
                         <div class="swiper-wrapper">
                             <?php foreach ($product['slider_images'] as $slide): ?>
-                            <div class="swiper-slide" style="width: 100%; background: #f1f5f9; border-radius: 12px; display: flex; align-items: center; justify-content: center; min-height: 350px;">
-                                <img src="<?php echo BASE_URL; ?><?php echo $slide; ?>" alt="<?php echo $product['title']; ?> Screenshot" style="width: 100%; height: auto; max-height: 450px; object-fit: contain; border-radius: 12px;">
-                            </div>
+                                <div class="swiper-slide" style="width: 100%; background: #f1f5f9; border-radius: 12px; display: flex; align-items: center; justify-content: center; min-height: 350px;">
+                                    <img src="<?php echo BASE_URL; ?><?php echo $slide; ?>" alt="<?php echo $product['title']; ?> Screenshot" style="width: 100%; height: auto; max-height: 450px; object-fit: contain; border-radius: 12px;">
+                                </div>
                             <?php endforeach; ?>
                         </div>
                         <div class="swiper-pagination"></div>
@@ -306,10 +313,10 @@ $productSchema = [
                     <h3 style="font-size: 20px; font-weight: 900; color: var(--heading-color); margin-bottom: 20px;">Having 5 Panels in this CRM</h3>
                     <div class="pc-panels-grid">
                         <?php foreach ($product['panels'] as $panel): ?>
-                        <div style="display: flex; align-items: center; gap: 12px; padding: 16px; background: var(--light-bg); border: 1px solid var(--border-color); border-radius: 12px; grid-column: span <?php echo $panel['span']; ?>;">
-                            <div style="min-width: 38px; height: 38px; background: rgba(6,182,212,0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--secondary-color); font-size: 16px;"><i class="<?php echo $panel['icon']; ?>"></i></div>
-                            <span style="font-weight: 700; font-size: 14px; color: var(--heading-color);"><?php echo $panel['title']; ?></span>
-                        </div>
+                            <div style="display: flex; align-items: center; gap: 12px; padding: 16px; background: var(--light-bg); border: 1px solid var(--border-color); border-radius: 12px; grid-column: span <?php echo $panel['span']; ?>; transition: all 0.3s ease; cursor: default;" onmouseover="this.style.transform='translateY(-5px)'; this.style.borderColor='var(--secondary-color)'; this.style.boxShadow='0 10px 20px rgba(6,182,212,0.1)';" onmouseout="this.style.transform='translateY(0)'; this.style.borderColor='var(--border-color)'; this.style.boxShadow='none';">
+                                <div style="min-width: 38px; height: 38px; background: rgba(6,182,212,0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--secondary-color); font-size: 16px;"><i class="<?php echo $panel['icon']; ?>"></i></div>
+                                <span style="font-weight: 700; font-size: 14px; color: var(--heading-color);"><?php echo $panel['title']; ?></span>
+                            </div>
                         <?php endforeach; ?>
                     </div>
                 </div>
@@ -319,14 +326,14 @@ $productSchema = [
                     <h3 style="font-size: 20px; font-weight: 900; color: var(--heading-color); margin-bottom: 20px;">Features</h3>
                     <ul style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: 12px;">
                         <?php foreach ($product['features'] as $feat): ?>
-                        <li style="display: flex; align-items: flex-start; gap: 12px; padding: 14px 16px; background: var(--light-bg); border: 1px solid var(--border-color); border-radius: 10px;">
-                            <i class="fas fa-check-circle" style="color: var(--secondary-color); margin-top: 2px;"></i>
-                            <?php if (!empty($feat['sub'])): ?>
-                            <div><span style="font-size: 14px; color: var(--heading-color); font-weight: 600;"><?php echo $feat['title']; ?></span><br><span style="font-size: 13px; color: var(--text-color);"><?php echo $feat['sub']; ?></span></div>
-                            <?php else: ?>
-                            <span style="font-size: 14px; color: var(--heading-color); font-weight: 600;"><?php echo $feat['title']; ?></span>
-                            <?php endif; ?>
-                        </li>
+                            <li style="display: flex; align-items: flex-start; gap: 12px; padding: 14px 16px; background: var(--light-bg); border: 1px solid var(--border-color); border-radius: 10px; transition: all 0.3s ease;" onmouseover="this.style.transform='translateX(8px)'; this.style.borderColor='var(--secondary-color)'; this.style.background='rgba(6,182,212,0.02)';" onmouseout="this.style.transform='translateX(0)'; this.style.borderColor='var(--border-color)'; this.style.background='var(--light-bg)';">
+                                <i class="fas fa-check-circle" style="color: var(--secondary-color); margin-top: 2px;"></i>
+                                <?php if (!empty($feat['sub'])): ?>
+                                    <div><span style="font-size: 14px; color: var(--heading-color); font-weight: 600;"><?php echo $feat['title']; ?></span><br><span style="font-size: 13px; color: var(--text-color);"><?php echo $feat['sub']; ?></span></div>
+                                <?php else: ?>
+                                    <span style="font-size: 14px; color: var(--heading-color); font-weight: 600;"><?php echo $feat['title']; ?></span>
+                                <?php endif; ?>
+                            </li>
                         <?php endforeach; ?>
                     </ul>
                 </div>
@@ -384,8 +391,8 @@ $productSchema = [
                     <div class="card" style="padding: 25px; border-radius: var(--radius-lg); margin-bottom: 25px;">
                         <h4 style="font-size: 15px; font-weight: 800; color: var(--heading-color); margin-bottom: 15px;"><i class="fas fa-folder" style="color: var(--secondary-color); margin-right: 8px;"></i>Shop Categories</h4>
                         <ul style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: 8px;">
-                            <li><a href="#" style="display: flex; align-items: center; gap: 8px; padding: 10px 14px; background: var(--light-bg); border: 1px solid var(--border-color); border-radius: 8px; font-size: 13px; font-weight: 600; color: var(--heading-color); text-decoration: none;"><i class="fas fa-graduation-cap" style="color: var(--secondary-color);"></i> Educational</a></li>
-                            <li><a href="#" style="display: flex; align-items: center; gap: 8px; padding: 10px 14px; background: rgba(6,182,212,0.08); border: 1px solid rgba(6,182,212,0.2); border-radius: 8px; font-size: 13px; font-weight: 600; color: var(--secondary-color); text-decoration: none;"><i class="fas fa-building"></i> Real Estate</a></li>
+                            <li><a href="#" style="display: flex; align-items: center; gap: 8px; padding: 10px 14px; background: var(--light-bg); border: 1px solid var(--border-color); border-radius: 8px; font-size: 13px; font-weight: 600; color: var(--heading-color); text-decoration: none; transition: 0.3s ease;" onmouseover="this.style.transform='translateX(6px)'; this.style.borderColor='var(--secondary-color)';" onmouseout="this.style.transform='translateX(0)'; this.style.borderColor='var(--border-color)';"><i class="fas fa-graduation-cap" style="color: var(--secondary-color);"></i> Educational</a></li>
+                            <li><a href="#" style="display: flex; align-items: center; gap: 8px; padding: 10px 14px; background: rgba(6,182,212,0.08); border: 1px solid rgba(6,182,212,0.2); border-radius: 8px; font-size: 13px; font-weight: 600; color: var(--secondary-color); text-decoration: none; transition: 0.3s ease;" onmouseover="this.style.transform='translateX(6px)'; this.style.background='var(--secondary-color)'; this.style.color='#ffffff'; this.querySelector('i').style.color='#ffffff';" onmouseout="this.style.transform='translateX(0)'; this.style.background='rgba(6,182,212,0.08)'; this.style.color='var(--secondary-color)'; this.querySelector('i').style.color='var(--secondary-color)';"><i class="fas fa-building"></i> Real Estate</a></li>
                         </ul>
                     </div>
 
@@ -393,12 +400,9 @@ $productSchema = [
                     <div class="card" style="padding: 25px; border-radius: var(--radius-lg);">
                         <h4 style="font-size: 15px; font-weight: 800; color: var(--heading-color); margin-bottom: 15px;"><i class="fas fa-tags" style="color: var(--secondary-color); margin-right: 8px;"></i>Product Tags</h4>
                         <div style="display: flex; flex-wrap: wrap; gap: 8px;">
-                            <a href="#" style="padding: 5px 12px; background: var(--light-bg); border: 1px solid var(--border-color); border-radius: 6px; font-size: 11px; font-weight: 600; color: var(--text-color); text-decoration: none;">Agent Management</a>
-                            <a href="#" style="padding: 5px 12px; background: var(--light-bg); border: 1px solid var(--border-color); border-radius: 6px; font-size: 11px; font-weight: 600; color: var(--text-color); text-decoration: none;">CRM</a>
-                            <a href="#" style="padding: 5px 12px; background: var(--light-bg); border: 1px solid var(--border-color); border-radius: 6px; font-size: 11px; font-weight: 600; color: var(--text-color); text-decoration: none;">Lead Management</a>
-                            <a href="#" style="padding: 5px 12px; background: var(--light-bg); border: 1px solid var(--border-color); border-radius: 6px; font-size: 11px; font-weight: 600; color: var(--text-color); text-decoration: none;">Property Listing</a>
-                            <a href="#" style="padding: 5px 12px; background: var(--light-bg); border: 1px solid var(--border-color); border-radius: 6px; font-size: 11px; font-weight: 600; color: var(--text-color); text-decoration: none;">Real Estate</a>
-                            <a href="#" style="padding: 5px 12px; background: var(--light-bg); border: 1px solid var(--border-color); border-radius: 6px; font-size: 11px; font-weight: 600; color: var(--text-color); text-decoration: none;">Real Estate CRM</a>
+                            <?php foreach ($product['tags'] as $tag): ?>
+                                <a href="#" style="padding: 5px 12px; background: var(--light-bg); border: 1px solid var(--border-color); border-radius: 6px; font-size: 11px; font-weight: 600; color: var(--text-color); text-decoration: none; transition: all 0.3s ease;" onmouseover="this.style.background='var(--secondary-color)'; this.style.color='#ffffff'; this.style.transform='scale(1.05)';" onmouseout="this.style.background='var(--light-bg)'; this.style.color='var(--text-color)'; this.style.transform='scale(1)';"><?php echo $tag; ?></a>
+                            <?php endforeach; ?>
                         </div>
                     </div>
 

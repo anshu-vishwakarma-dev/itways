@@ -204,16 +204,7 @@ $serviceSchema = [
 </script>
 
 <section class="corporate-sub-hero bg-grid-premium">
-    <div class="mesh-bg"></div>
-    <div class="hero-aura"></div>
-    <div class="hero-particles">
-        <div class="particle p2"></div>
-        <div class="particle p5"></div>
-        <div class="particle p8"></div>
-        <div class="particle p11"></div>
-        <div class="particle p14"></div>
-        <div class="particle p16"></div>
-    </div>
+    <canvas id="heroCanvas" class="hero-canvas"></canvas>
     <div class="container" style="position: relative; z-index: 5;">
         <!-- Breadcrumb -->
         <nav style="display: inline-flex; align-items: center; gap: 8px; padding: 8px 20px; background: rgba(14, 165, 233, 0.1); border: 1px solid rgba(14, 165, 233, 0.15); border-radius: 50px; color: var(--text-color); font-size: 13px; font-weight: 600; margin-bottom: 30px; backdrop-filter: blur(10px);">
@@ -328,7 +319,7 @@ $serviceSchema = [
                         <div style="position: absolute; top: -50px; right: -50px; width: 150px; height: 150px; background: var(--secondary-color); filter: blur(80px); opacity: 0.2;"></div>
 
                         <h4 style="font-size: 20px; font-weight: 800; margin-bottom: 10px;">Get a Quote</h4>
-                        <p style="font-size: 14px; opacity: 0.7; margin-bottom: 25px; color: #111;">Ready to start your project? Let's discuss your requirements.</p>
+                        <p style="font-size: 14px; opacity: 0.8; margin-bottom: 25px; color: #111;">Ready to start your project? Let's discuss your requirements.</p>
 
                         <form class="quote-form" style="display: flex; flex-direction: column; gap: 12px;" action="<?php echo $base_url; ?>includes/form-handler.php" method="POST">
                             <input type="hidden" name="form_type" value="Service Quote Form">

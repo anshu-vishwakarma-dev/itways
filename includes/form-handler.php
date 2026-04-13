@@ -37,7 +37,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     // 4. Prepare the Email
     $to      = "info@itways.in";
-    $subject = "ITWAYS New Lead: " . $form_type;
+    $email_subject = "ITWAYS New Lead: " . $form_type;
     
     $body  = "You have a new inquiry from your website:\n\n";
     $body .= "Form Type: $form_type\n";
@@ -48,7 +48,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $body .= "Message: $message\n";
 
     // 5. Send Email (Uncomment the line below to go live)
-    // mail($to, $subject, $body, "From: webmaster@itways.in");
+    // mail($to, $email_subject, $body, "From: webmaster@itways.in");
 
     // 6. Always return success for the AJAX call
     echo json_encode([
