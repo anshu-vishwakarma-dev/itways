@@ -8,13 +8,17 @@
         <div class="glass-shape shape-3"></div>
 
         <div class="container" style="position: relative; z-index: 2;" data-aos="fade-up">
-            <h3 style="color: #fff; font-size: clamp(1.0rem, 6vw, 1.5rem); font-weight: 800;">Ready to Elevate Your Business?</h3>
-            <p style="font-size: 1.2rem; max-width: 700px; margin: 0 auto 40px; color: rgba(255,255,255,0.9); line-height: 1.8;">Join hands with ITways to unlock innovative tech solutions, robust software development, and unparalleled IT support tailored to your success.</p>
+            <h3 style="color: #fff; font-size: clamp(1.0rem, 6vw, 1.5rem); font-weight: 800;">Ready to Transform Your Real Estate Business?</h3>
+            <p style="font-size: 1.2rem; max-width: 700px; margin: 0 auto 40px; color: rgba(255,255,255,0.9); line-height: 1.8;">Join 100+ businesses already using IT Ways CRM to close more deals, save time, and grow faster.</p>
 
-            <a href="<?php echo $base_url; ?>contact/" class="cta-animated-btn">
-                <span>Start Your Project</span>
-                <i class="fas fa-arrow-right"></i>
-            </a>
+            <div class="pd-bottom-cta-buttons">
+                    <a href="#demo-form" class="btn btn-primary pd-btn-hero-primary">
+                        <i class="fas fa-calendar-check"></i> Book Free Demo
+                    </a>
+                    <a href="tel:+919919227600" class="btn pd-btn-bottom-call">
+                        <i class="fas fa-phone-alt"></i> Call Now: +91 9919227600
+                    </a>
+                </div>
         </div>
     </section>
 

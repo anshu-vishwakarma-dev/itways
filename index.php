@@ -11,156 +11,94 @@
         <div class="hero-main-swiper swiper" id="heroMainSwiper">
             <div class="swiper-wrapper">
 
-                <!-- Slide 1: Cover Slide -->
+                <!-- Slide 1: Lead Management -->
                 <div class="swiper-slide">
                     <div class="hero-split-layout">
                         <div class="hero-content-col">
-                            <div class="corporate-badge"><span class="hero-badge-dot"></span> IT Ways Real Estate CRM</div>
-                            <div class="hero-slide-icon-wrap" style="justify-content: flex-start; margin: 0 0 20px;">
-                                <div class="hero-slide-icon-bg hero-icon-blue"><i class="fas fa-building-user"></i></div>
+                            <div class="corporate-badge"><span class="hero-badge-dot"></span> Smart Lead Management</div>
+                            <div class="hero-slide-icon-wrap" style="justify-content: flex-start; margin: 0 0 10px;">
+                                <div class="hero-slide-icon-bg hero-icon-blue"><i class="fas fa-user-plus"></i></div>
                             </div>
-                            <h1>Your Digital <br><span class="shimmer-text">Real Estate Office</span></h1>
-                            <p><strong>ISO 9001 | ISO 27001</strong><br>Contact: www.itways.in | 9919227600</p>
+                            <h1>Smart <span class="shimmer-text">Lead Management</span></h1>
+                            <p>Capture, organize, and track all your leads from multiple sources in one place. Never miss an opportunity with automated follow-ups and real-time updates.<br>
+                                <a href="#contact" class="btn-corporate-primary" style="margin-top: 20px;">Start Free Trial <i class="fas fa-arrow-right ms-1"></i></a>
+                            </p>
                         </div>
                         <div class="hero-image-col">
-                            <img src="<?php echo $base_url; ?>assets/img/hero_crm_1775735870113.png" alt="CRM Interface 3D" class="hero-floating-img">
+                            <img src="<?php echo $base_url; ?>assets/screenshots/lead.png" alt="Leads" class="hero-floating-img img-delay-1">
                         </div>
                     </div>
                 </div>
 
-                <!-- Slide 2: Problem Statement -->
+                <!-- Slide 2: WhatsApp Integration -->
                 <div class="swiper-slide">
                     <div class="hero-split-layout">
                         <div class="hero-content-col">
-                            <div class="corporate-badge"><span class="hero-badge-dot"></span> Challenges in Real Estate Business</div>
-                            <h1>Managing real estate without CRM <br><span class="shimmer-text">is like running blind.</span></h1>
-                            <p>• Leads scattered across WhatsApp, Excel & calls<br>• No proper follow-up tracking<br>• Team performance unclear<br>• Missed opportunities = lost revenue<br>• No centralized system</p>
+                            <div class="corporate-badge"><span class="hero-badge-dot"></span> Instant Connectivity</div>
+                            <div class="hero-slide-icon-wrap" style="justify-content: flex-start; margin: 0 0 10px;">
+                                <div class="hero-slide-icon-bg hero-icon-emerald"><i class="fab fa-whatsapp"></i></div>
+                            </div>
+                            <h1>WhatsApp <span class="shimmer-text">Integration</span></h1>
+                            <p>Connect instantly with your clients using automated messages, real-time chat, and smart follow-up reminders directly from your CRM.<br>
+                                <a href="https://wapzapp.itways.in/" class="btn-corporate-primary" style="margin-top: 20px;">Try Now <i class="fas fa-arrow-right ms-1"></i></a>
+                            </p>
                         </div>
                         <div class="hero-image-col">
-                            <img src="<?php echo $base_url; ?>assets/img/hero_software_1775735883325.png" alt="Challenges" class="hero-floating-img img-delay-1">
+                            <img src="<?php echo $base_url; ?>assets/screenshots/whatsapp.png" alt="WhatsApp" class="hero-floating-img img-delay-2">
                         </div>
                     </div>
                 </div>
 
-                <!-- Slide 3: Solution Introduction -->
+                <!-- Slide 3: Team Management -->
                 <div class="swiper-slide">
                     <div class="hero-split-layout">
                         <div class="hero-content-col">
-                            <div class="corporate-badge"><span class="hero-badge-dot"></span> Introducing IT Ways CRM</div>
-                            <h1>All-in-One Real Estate <br><span class="shimmer-text">Management System</span></h1>
-                            <p>• Designed for Agents, Builders & Developers<br>• Fully customized with your domain & branding<br>• Cloud-based + Secure</p>
+                            <div class="corporate-badge"><span class="hero-badge-dot"></span> Team Collaboration</div>
+                            <div class="hero-slide-icon-wrap" style="justify-content: flex-start; margin: 0 0 10px;">
+                                <div class="hero-slide-icon-bg hero-icon-amber"><i class="fas fa-users-viewfinder"></i></div>
+                            </div>
+                            <h1>Team Management <span class="shimmer-text">System</span></h1>
+                            <p>Assign leads, monitor team performance, and track activities in real-time to improve productivity and accountability.<br>
+                                <a href="#contact" class="btn-corporate-primary" style="margin-top: 20px;">Start Free Trial <i class="fas fa-arrow-right ms-1"></i></a>
+                            </p>
                         </div>
                         <div class="hero-image-col">
-                            <img src="<?php echo $base_url; ?>assets/img/hero_web_1775735950992.png" alt="Solution" class="hero-floating-img img-delay-2">
+                            <img src="<?php echo $base_url; ?>assets/screenshots/team.png" alt="Team" class="hero-floating-img">
                         </div>
                     </div>
                 </div>
 
-                <!-- Slide 4: Key Features -->
+                <!-- Slide 4: Reports & Analytics -->
                 <div class="swiper-slide">
                     <div class="hero-split-layout">
                         <div class="hero-content-col">
-                            <div class="corporate-badge"><span class="hero-badge-dot"></span> Key Features Overview</div>
-                            <h1>Everything You Need <br><span class="shimmer-text">In One Dashboard</span></h1>
-                            <p>• Lead Management System<br>• Property Management<br>• Follow-up Automation<br>• WhatsApp Integration<br>• Team & Staff Management<br>• Reporting Dashboard</p>
+                            <div class="corporate-badge"><span class="hero-badge-dot"></span> Data Insights</div>
+                            <div class="hero-slide-icon-wrap" style="justify-content: flex-start; margin: 0 0 10px;">
+                                <div class="hero-slide-icon-bg hero-icon-blue"><i class="fas fa-chart-line"></i></div>
+                            </div>
+                            <h1>Reports & <span class="shimmer-text">Analytics</span></h1>
+                            <p>Get detailed insights into your business with daily and monthly reports, lead conversion tracking, and performance analysis.<br>
+                                <a href="#contact" class="btn-corporate-primary" style="margin-top: 20px;">Start Free Trial <i class="fas fa-arrow-right ms-1"></i></a>
+                            </p>
                         </div>
                         <div class="hero-image-col">
-                            <img src="<?php echo $base_url; ?>assets/img/hero_it_1775736098080.png" alt="Features" class="hero-floating-img">
+                            <img src="<?php echo $base_url; ?>assets/screenshots/report.png" alt="Analytics" class="hero-floating-img img-delay-1">
                         </div>
                     </div>
                 </div>
 
-                <!-- Slide 5: Lead Management -->
+                <!-- Slide 5: Business Benefits -->
                 <div class="swiper-slide">
                     <div class="hero-split-layout">
                         <div class="hero-content-col">
-                            <div class="corporate-badge"><span class="hero-badge-dot"></span> Lead Management (Core Feature)</div>
-                            <h1>Never miss a <br><span class="shimmer-text">lead again.</span></h1>
-                            <p>• Capture leads from Website, Facebook, WhatsApp<br>• Auto lead assignment<br>• Lead status tracking<br>• Follow-up reminders</p>
-                        </div>
-                        <div class="hero-image-col">
-                            <img src="<?php echo $base_url; ?>assets/img/hero_crm_1775735870113.png" alt="Leads" class="hero-floating-img img-delay-1">
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Slide 6: Property Management -->
-                <div class="swiper-slide">
-                    <div class="hero-split-layout">
-                        <div class="hero-content-col">
-                            <div class="corporate-badge"><span class="hero-badge-dot"></span> Property Management</div>
-                            <h1>Showcase Your <br><span class="shimmer-text">Properties Beautifully</span></h1>
-                            <p>• Add & manage unlimited properties<br>• Create landing pages<br>• Share property instantly via WhatsApp</p>
-                        </div>
-                        <div class="hero-image-col">
-                            <img src="<?php echo $base_url; ?>assets/img/hero_software_1775735883325.png" alt="Properties" class="hero-floating-img">
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Slide 7: WhatsApp Integration -->
-                <div class="swiper-slide">
-                    <div class="hero-split-layout">
-                        <div class="hero-content-col">
-                            <div class="corporate-badge"><span class="hero-badge-dot"></span> WhatsApp Integration</div>
-                            <h1>Convert leads faster <br><span class="shimmer-text">with automation.</span></h1>
-                            <p>• Auto Welcome Message to Leads<br>• Follow-up reminders<br>• Staff notification on lead assignment<br>• Broadcast campaigns</p>
-                        </div>
-                        <div class="hero-image-col">
-                            <img src="<?php echo $base_url; ?>assets/img/hero_web_1775735950992.png" alt="WhatsApp" class="hero-floating-img img-delay-2">
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Slide 8: Team Management -->
-                <div class="swiper-slide">
-                    <div class="hero-split-layout">
-                        <div class="hero-content-col">
-                            <div class="corporate-badge"><span class="hero-badge-dot"></span> Team Management</div>
-                            <h1>Empower Your <br><span class="shimmer-text">Sales Team</span></h1>
-                            <p>• Staff login system<br>• Track performance<br>• Assign leads<br>• Monitor activities</p>
-                        </div>
-                        <div class="hero-image-col">
-                            <img src="<?php echo $base_url; ?>assets/img/hero_it_1775736098080.png" alt="Team" class="hero-floating-img">
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Slide 9: Reports & Analytics -->
-                <div class="swiper-slide">
-                    <div class="hero-split-layout">
-                        <div class="hero-content-col">
-                            <div class="corporate-badge"><span class="hero-badge-dot"></span> Reports & Analytics</div>
-                            <h1>Data-Driven <br><span class="shimmer-text">Insights</span></h1>
-                            <p>• Daily / Monthly Reports<br>• Lead conversion tracking<br>• Staff performance insights</p>
-                        </div>
-                        <div class="hero-image-col">
-                            <img src="<?php echo $base_url; ?>assets/img/hero_crm_1775735870113.png" alt="Analytics" class="hero-floating-img img-delay-1">
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Slide 10: USP -->
-                <div class="swiper-slide">
-                    <div class="hero-split-layout">
-                        <div class="hero-content-col">
-                            <div class="corporate-badge"><span class="hero-badge-dot"></span> Unique Selling Points (USP)</div>
-                            <h1>Why Choose <br><span class="shimmer-text">IT Ways CRM?</span></h1>
-                            <p>• White-label CRM (Your domain, your brand)<br>• No SaaS dependency<br>• WhatsApp API integrated<br>• Fully customizable<br>• One-time setup option</p>
-                        </div>
-                        <div class="hero-image-col">
-                            <img src="<?php echo $base_url; ?>assets/img/hero_software_1775735883325.png" alt="USP" class="hero-floating-img">
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Slide 11: Business Benefits -->
-                <div class="swiper-slide">
-                    <div class="hero-split-layout">
-                        <div class="hero-content-col">
-                            <div class="corporate-badge"><span class="hero-badge-dot"></span> Business Benefits</div>
-                            <h1>Scale Your Business <br><span class="shimmer-text">Efficiently</span></h1>
-                            <p>• Increase sales conversion<br>• Improve team productivity<br>• Centralized management<br>• Save time & cost</p>
+                            <div class="corporate-badge"><span class="hero-badge-dot"></span> Core Benefits</div>
+                            <div class="hero-slide-icon-wrap" style="justify-content: flex-start; margin: 0 0 10px;">
+                                <div class="hero-slide-icon-bg hero-icon-emerald"><i class="fas fa-arrow-trend-up"></i></div>
+                            </div>
+                            <h1>Why Choose <span class="shimmer-text">Our CRM</span></h1>
+                            <p>Boost efficiency, increase sales, and manage your entire business from one centralized platform designed for real estate professionals.<br>
+                                <a href="#contact" class="btn-corporate-primary" style="margin-top: 20px;">Start Free Trial <i class="fas fa-arrow-right ms-1"></i></a>
+                            </p>
                         </div>
                         <div class="hero-image-col">
                             <img src="<?php echo $base_url; ?>assets/img/hero_web_1775735950992.png" alt="Benefits" class="hero-floating-img img-delay-2">
@@ -168,51 +106,24 @@
                     </div>
                 </div>
 
-                <!-- Slide 12: Demo -->
+                <!-- Slide 6: Demo -->
                 <div class="swiper-slide">
                     <div class="hero-split-layout">
                         <div class="hero-content-col">
-                            <div class="corporate-badge"><span class="hero-badge-dot"></span> Demo / Screenshot Slide</div>
-                            <h1>Experience the <br><span class="shimmer-text">Power Interface</span></h1>
-                            <p>See exactly how our dashboard makes managing your real estate empire effortless.</p>
-                        </div>
-                        <div class="hero-image-col">
-                            <img src="<?php echo $base_url; ?>assets/img/hero_crm_1775735870113.png" alt="Dashboard Demo" class="hero-floating-img" style="border: 4px solid var(--secondary-color); box-shadow: 0 10px 30px rgba(0,0,0,0.2);">
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Slide 13: Packages -->
-                <div class="swiper-slide">
-                    <div class="hero-split-layout">
-                        <div class="hero-content-col">
-                            <div class="corporate-badge"><span class="hero-badge-dot"></span> Packages & Offers</div>
-                            <h1>Flexible Plans for <br><span class="shimmer-text">Every Need</span></h1>
-                            <p>• <strong>Basic CRM:</strong> Perfect for solo agents.<br>• <strong>Pro CRM:</strong> Great for growing teams.<br>• <strong>Enterprise CRM:</strong> Ultimate automation & scale.</p>
-                        </div>
-                        <div class="hero-image-col">
-                            <img src="<?php echo $base_url; ?>assets/img/hero_software_1775735883325.png" alt="Packages" class="hero-floating-img img-delay-1">
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Slide 14: Call to Action -->
-                <div class="swiper-slide">
-                    <div class="hero-split-layout">
-                        <div class="hero-content-col">
-                            <div class="corporate-badge"><span class="hero-badge-dot"></span> Let’s Grow Your Real Estate Business 🚀</div>
-                            <h1>Book Your Free <br><span class="shimmer-text">Demo Today</span></h1>
-                            <p>📞 Call: 9919227600<br>🌐 www.itways.in<br>📩 info@itways.in</p>
-                            <div style="margin-top:20px;">
-                                <a href="#contact" class="btn-corporate-primary">Contact Us Now <i class="fas fa-arrow-right ms-2"></i></a>
+                            <div class="corporate-badge"><span class="hero-badge-dot"></span> Live Experience</div>
+                            <div class="hero-slide-icon-wrap" style="justify-content: flex-start; margin: 0 0 10px;">
+                                <div class="hero-slide-icon-bg hero-icon-amber"><i class="fas fa-laptop-file"></i></div>
                             </div>
+                            <h1>Live CRM <span class="shimmer-text">Demo</span></h1>
+                            <p>Experience our CRM in action with a real-time dashboard preview showcasing powerful features and an easy-to-use interface.<br>
+                                <a href="#contact" class="btn-corporate-primary" style="margin-top: 20px;">Start Free Trial <i class="fas fa-arrow-right ms-1"></i></a>
+                            </p>
                         </div>
                         <div class="hero-image-col">
-                            <img src="<?php echo $base_url; ?>assets/img/hero_it_1775736098080.png" alt="CTA" class="hero-floating-img">
+                            <img src="<?php echo $base_url; ?>assets/screenshots/demo.png" alt="Dashboard Demo" class="hero-floating-img">
                         </div>
                     </div>
                 </div>
-
             </div><!-- /.swiper-wrapper -->
 
             <!-- Navigation Arrows -->
@@ -224,22 +135,24 @@
             </button>
 
             <!-- Slide Tabs (Dynamic Pagination Placeholder) -->
-            <div class="hero-slide-tabs" id="heroSlideTabs" style="display:none;">
-                <button class="hero-tab active" data-index="0">
-                    <span class="tab-num">01</span>
-                    <span class="tab-label">CRM Software</span>
+            <div class="hero-slide-tabs" id="heroSlideTabs">
+                <button class="hero-tab" data-index="0">
+                    <span class="tab-label">Leads</span>
                 </button>
                 <button class="hero-tab" data-index="1">
-                    <span class="tab-num">02</span>
-                    <span class="tab-label">ERP &amp; Software</span>
+                    <span class="tab-label">WhatsApp</span>
                 </button>
                 <button class="hero-tab" data-index="2">
-                    <span class="tab-num">03</span>
-                    <span class="tab-label">Web &amp; Marketing</span>
+                    <span class="tab-label">Team</span>
                 </button>
                 <button class="hero-tab" data-index="3">
-                    <span class="tab-num">04</span>
-                    <span class="tab-label">IT &amp; CCTV</span>
+                    <span class="tab-label">Reports</span>
+                </button>
+                <button class="hero-tab" data-index="4">
+                    <span class="tab-label">Benefits</span>
+                </button>
+                <button class="hero-tab" data-index="5">
+                    <span class="tab-label">Demo</span>
                 </button>
             </div>
 
@@ -277,7 +190,7 @@
         <div class="flex-1-min-300 position-relative">
             <img src="https://images.unsplash.com/photo-1573164713988-8665fc963095?ixlib=rb-4.0.3&auto=format&fit=crop&w=1738&q=80" alt="ITWAYS Technology Partner Lucknow" class="img-fluid hero-image-br-shadow" loading="lazy">
             <div class="idx-experience-badge">
-                <span class="idx-experience-val">10+</span>
+                <span class="idx-experience-val">15+</span>
                 <span class="idx-experience-text">Years Experience</span>
             </div>
         </div>

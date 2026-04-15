@@ -283,7 +283,7 @@ $breadcrumbSchema = [
                 <!-- Logo -->
                 <div class="logo-area">
                     <a href="<?php echo $base_url; ?>" class="logo">
-                        <img src="<?php echo $base_url; ?>assets/logo.png" alt="IT WAYS" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" style="height: 60px !important; transition: all 0.3s ease;">
+                        <img src="<?php echo $base_url; ?>assets/logo.png" alt="IT WAYS" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" style="height: 50px !important; transition: all 0.3s ease;">
                         <div class="logo-text-fallback" style="display: none; align-items: center; gap: 10px;">
                             <span style="color: #0ea5e9; font-weight: 900; font-size: 32px; letter-spacing: -2px;">IIW</span>
                             <div style="display: flex; flex-direction: column; line-height: 1;">
